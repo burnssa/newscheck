@@ -1,0 +1,12 @@
+LICENSE
+pyproject.toml
+newscheck/__init__.py
+newscheck/extract.py
+newscheck/fetch.py
+newscheck/prompts.py
+newscheck/types.py
+newscheck.egg-info/PKG-INFO
+newscheck.egg-info/SOURCES.txt
+newscheck.egg-info/dependency_links.txt
+newscheck.egg-info/requires.txt
+newscheck.egg-info/top_level.txt

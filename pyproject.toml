@@ -1,0 +1,15 @@
+[project]
+name = "newscheck"
+version = "0.1.0"
+description = "Open source news article claim extraction"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = [
+    "trafilatura>=1.6",
+    "openai>=1.0",
+    "pydantic>=2.0",
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
