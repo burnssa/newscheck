@@ -53,15 +53,6 @@ def fetch_article(url: str) -> Article:
     if not downloaded:
         raise ValueError(f"Failed to download article from {url}")
 
-    metadata = trafilatura.extract(
-        downloaded,
-        output_format="txt",
-        include_comments=False,
-        include_tables=False,
-        with_metadata=True,
-        favor_precision=True,
-    )
-
     text = trafilatura.extract(
         downloaded,
         output_format="txt",
@@ -73,19 +64,17 @@ def fetch_article(url: str) -> Article:
     if not text:
         raise ValueError(f"Failed to extract article text from {url}")
 
-    # Parse metadata for title/author
+    # Extract metadata (title, author)
+    # trafilatura 2.0+ returns a Document object from bare_extraction
     title = None
     author = None
-    if metadata:
-        # trafilatura with_metadata returns text with metadata header lines
-        # Try extracting via the bare extraction + metadata object
+    try:
+        metadata_obj = trafilatura.bare_extraction(downloaded)
+        if metadata_obj:
+            title = getattr(metadata_obj, "title", None) or (metadata_obj.get("title") if isinstance(metadata_obj, dict) else None)
+            author = getattr(metadata_obj, "author", None) or (metadata_obj.get("author") if isinstance(metadata_obj, dict) else None)
+    except Exception:
         pass
-
-    # Use trafilatura's metadata extraction
-    metadata_obj = trafilatura.bare_extraction(downloaded)
-    if metadata_obj:
-        title = metadata_obj.get("title")
-        author = metadata_obj.get("author")
 
     domain = urlparse(url).netloc
 
