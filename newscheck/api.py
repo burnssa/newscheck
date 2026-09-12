@@ -13,22 +13,19 @@ import os
 import re
 import time
 from datetime import datetime
-from pathlib import Path
 
 import httpx
 from dotenv import load_dotenv
 from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 from sse_starlette.sse import EventSourceResponse
-from sqlalchemy import create_engine, text
 
 from .fetch import fetch_article, classify_article
 
 # ---------- Config ----------
 
-ENV_PATH = Path(__file__).resolve().parent.parent.parent / "superjective" / ".env"
-if ENV_PATH.exists():
-    load_dotenv(ENV_PATH)
+# Reads a .env from the working directory if one exists. Real environment variables win.
+load_dotenv()
 
 PROVIDER_KEY_MAP = {
     "openai": "OPENAI_API_KEY",
@@ -37,6 +34,20 @@ PROVIDER_KEY_MAP = {
     "xai": "XAI_API_KEY",
 }
 TAVILY_API_KEY = os.getenv("TAVILY_API_KEY", "")
+
+# Used when DATABASE_URL is not set. These are the four models the batch results in
+# output/ were produced with. Entries whose provider key is missing from the
+# environment are skipped, so set only the keys you have.
+DEFAULT_MODELS = [
+    {"name": "gpt-5-chat-latest", "provider": "openai", "adapter": "OpenAIAdapter",
+     "endpoint": "https://api.openai.com/v1/chat/completions"},
+    {"name": "claude-opus-4-5-20251101", "provider": "anthropic", "adapter": "AnthropicAdapter",
+     "endpoint": "https://api.anthropic.com/v1/messages"},
+    {"name": "claude-sonnet-4-5-20250929", "provider": "anthropic", "adapter": "AnthropicAdapter",
+     "endpoint": "https://api.anthropic.com/v1/messages"},
+    {"name": "grok-4-fast-non-reasoning", "provider": "xai", "adapter": "XAIAdapter",
+     "endpoint": "https://api.x.ai/v1/chat/completions"},
+]
 
 app = FastAPI(title="Newscheck", version="0.2.0")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
@@ -135,10 +146,24 @@ Return ONLY valid JSON with these fields:
 
 # ---------- DB + API callers ----------
 
+def _default_models():
+    """Static model list for running without a database."""
+    models = []
+    for i, m in enumerate(DEFAULT_MODELS, start=1):
+        api_key = os.getenv(PROVIDER_KEY_MAP.get(m["provider"], ""), "")
+        if not api_key:
+            continue
+        models.append({"id": i, **m, "api_key": api_key, "auth_type": "bearer"})
+    return models
+
+
 def _load_models():
+    """Models from a language_models table when DATABASE_URL is set; otherwise DEFAULT_MODELS."""
     db_url = os.getenv("DATABASE_URL", "").replace("postgres://", "postgresql://")
     if not db_url:
-        return []
+        return _default_models()
+    from sqlalchemy import create_engine, text  # only needed with a database
+
     engine = create_engine(db_url)
     with engine.connect() as conn:
         rows = conn.execute(text("""

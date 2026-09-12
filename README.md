@@ -35,6 +35,19 @@ pip install git+https://github.com/burnssa/newscheck.git
 
 Requires Python 3.10 or later.
 
+## Run the server
+
+The streaming checker in `newscheck/api.py` fetches an article, extracts claims, assesses each one against web search results with several models, and streams the results as server-sent events.
+
+```
+pip install "newscheck[server] @ git+https://github.com/burnssa/newscheck.git"
+export OPENAI_API_KEY=... ANTHROPIC_API_KEY=... XAI_API_KEY=... TAVILY_API_KEY=...
+uvicorn newscheck.api:app
+curl -N "http://127.0.0.1:8000/check?url=https://example.com/some-article"
+```
+
+Only providers whose key is set are used. A `.env` file in the working directory is read automatically. The Tavily key is needed for the web search step. Setting `DATABASE_URL` to a Postgres database with a `language_models` table swaps the built-in model list for that table.
+
 ## Status
 
 The hosted Newscheck page and its multi-model assessment layer were retired in September 2026 along with Superjective. This package works on its own and is not under active development.
