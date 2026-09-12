@@ -1,0 +1,37 @@
+# Newscheck opinion classifier test batch
+# 8 opinion articles + 2 non-opinion controls
+# Goal: verify classifier AND run claim extraction on opinion content
+
+# --- OPINION ARTICLES (should classify as opinion) ---
+
+# Fox News - immigration (right)
+https://www.foxnews.com/opinion/not-coming-america-60-year-immigration-bubble-finally-bursts
+
+# Washington Examiner - drug policy (right)
+https://www.washingtonexaminer.com/opinion/4480367/when-7oh-fears-drive-policy-by-anecdote-kratom/
+
+# The Hill - immigration enforcement data (center)
+https://thehill.com/opinion/lindseys-lens/5732057-trump-immigration-crackdown-data/
+
+# The Hill - trade policy (center)
+https://thehill.com/opinion/finance/5768708-trump-trade-policy-agenda-2026/
+
+# The Hill - healthcare costs (center)
+https://thehill.com/opinion/healthcare/5669986-america-sick-health-care/
+
+# The Hill - college education decline (center)
+https://thehill.com/opinion/education/5659983-college-decline-public-confidence/
+
+# Al Jazeera - Russia economic war myths (left/international)
+https://www.aljazeera.com/opinions/2026/2/24/three-myths-about-the-russia-economic-war
+
+# Al Jazeera - Iran strikes political impact (left/international)
+https://www.aljazeera.com/opinions/2026/3/4/the-iran-strikes-could-become-a-midterm-reckoning-for-trump-and-israel
+
+# --- CONTROL: NON-OPINION (should classify as news) ---
+
+# CNN straight news - jobs report
+https://www.cnn.com/2026/03/06/economy/us-jobs-report-february
+
+# CBS straight news - jobs report
+https://www.cbsnews.com/news/jobs-report-today-february-2026-economy-layoffs-bls/

@@ -1,0 +1,32 @@
+# Newscheck batch v2 - 10 new articles across diverse sources and topics
+# Focus: fact-dense reporting for extraction + assessment comparison
+
+# CNN - February 2026 jobs report
+https://www.cnn.com/2026/03/06/economy/us-jobs-report-february
+
+# CBS News - February 2026 jobs
+https://www.cbsnews.com/news/jobs-report-today-february-2026-economy-layoffs-bls/
+
+# Fox Business - February 2026 jobs
+https://www.foxbusiness.com/economy/us-jobs-report-february-2026
+
+# Washington Post - February 2026 jobs
+https://www.washingtonpost.com/business/2026/03/06/february-jobs-unemployment/
+
+# US News - government workforce shrinkage
+https://www.usnews.com/news/top-news/articles/2026-03-04/us-government-shed-386-826-workers-in-trumps-first-year-back-in-power
+
+# Florida Cancer Center - 2026 cancer trends
+https://www.flcancer.com/articles/2026-cancer-trends/
+
+# NPR - State of the Union fact check
+https://www.npr.org/2026/02/24/nx-s1-5716277/trump-state-union-fact-check
+
+# Pew Research - Trump confidence poll
+https://www.pewresearch.org/politics/2026/01/29/confidence-in-trump-dips-and-fewer-now-say-they-support-his-policies-and-plans/
+
+# Al Jazeera - Tehran bombing
+https://www.aljazeera.com/news/2026/3/6/tehran-hit-by-heavy-bombing-on-day-seven-of-us-israel-war-on-iran
+
+# Lowell Sun editorial - reading proficiency decline
+https://www.lowellsun.com/2026/03/07/editorial-reading-decline-jeopardizes-ap-proficiency/

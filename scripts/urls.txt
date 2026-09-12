@@ -1,0 +1,20 @@
+# Newscheck batch assessment - 10 articles across topics and sources
+# Mix of opinion, economic reporting, and policy analysis
+
+# Roll Call - opinion/analysis on military action
+https://rollcall.com/2026/03/04/trumps-big-bet-on-operation-epic-fury/
+
+# CNBC - economic reporting (jobs reports, markets)
+https://www.cnbc.com/2024/12/06/jobs-report-november-2024.html
+https://www.cnbc.com/2025/02/07/jobs-report-january-2025.html
+https://www.cnbc.com/2025/03/07/jobs-report-february-2025.html
+https://www.cnbc.com/2025/03/06/stock-market-today-live-updates.html
+
+# NBC News - economy and policy
+https://www.nbcnews.com/politics/donald-trump/trump-tariffs-canada-mexico-china-rcna194567
+https://www.nbcnews.com/business/economy/february-2025-jobs-report-rcna195000
+
+# The Conversation - academic analysis
+https://theconversation.com/trumps-tariffs-explained-246982
+https://theconversation.com/how-trumps-tariffs-will-affect-the-us-economy-247123
+https://theconversation.com/us-economy-outlook-2025-246000

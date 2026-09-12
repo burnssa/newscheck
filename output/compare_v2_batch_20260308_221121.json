@@ -1,0 +1,1874 @@
+{
+  "batch_metadata": {
+    "assessed_at": "2026-03-08T22:11:21.018127",
+    "version": "v2_sentence_level",
+    "articles": 1,
+    "models": [
+      "claude-opus-4-5-20251101",
+      "claude-sonnet-4-5-20250929",
+      "gemini-3-flash-preview",
+      "gpt-5-chat-latest",
+      "grok-4-fast-non-reasoning"
+    ],
+    "query_model": "gpt-5-chat-latest"
+  },
+  "articles": [
+    {
+      "url": "https://www.cbsnews.com/news/jobs-report-today-february-2026-economy-layoffs-bls/",
+      "title": null,
+      "author": null,
+      "domain": "www.cbsnews.com",
+      "word_count": 674,
+      "article_date": "2026-03-08",
+      "total_sentences": 26,
+      "truncated": false,
+      "extraction_comparison": {
+        "claude-opus-4-5-20251101": {
+          "claim_count": 15,
+          "sentence_count": 9,
+          "categories": {
+            "statistical": 11,
+            "historical": 1,
+            "comparative": 3
+          }
+        },
+        "claude-sonnet-4-5-20250929": {
+          "claim_count": 13,
+          "sentence_count": 10,
+          "categories": {
+            "statistical": 9,
+            "comparative": 2,
+            "historical": 2
+          }
+        },
+        "gemini-3-flash-preview": {
+          "claim_count": 0,
+          "sentence_count": 0,
+          "categories": {}
+        },
+        "gpt-5-chat-latest": {
+          "claim_count": 13,
+          "sentence_count": 10,
+          "categories": {
+            "statistical": 8,
+            "historical": 4,
+            "procedural": 1
+          }
+        },
+        "grok-4-fast-non-reasoning": {
+          "claim_count": 16,
+          "sentence_count": 11,
+          "categories": {
+            "statistical": 10,
+            "historical": 5,
+            "procedural": 1
+          }
+        }
+      },
+      "sentence_overlap": {
+        "claude-opus-4-5-20251101 vs claude-sonnet-4-5-20250929": {
+          "intersection": 9,
+          "union": 10,
+          "rate": 0.9
+        },
+        "claude-opus-4-5-20251101 vs gemini-3-flash-preview": {
+          "intersection": 0,
+          "union": 9,
+          "rate": 0.0
+        },
+        "claude-opus-4-5-20251101 vs gpt-5-chat-latest": {
+          "intersection": 9,
+          "union": 10,
+          "rate": 0.9
+        },
+        "claude-opus-4-5-20251101 vs grok-4-fast-non-reasoning": {
+          "intersection": 9,
+          "union": 11,
+          "rate": 0.8181818181818182
+        },
+        "claude-sonnet-4-5-20250929 vs gemini-3-flash-preview": {
+          "intersection": 0,
+          "union": 10,
+          "rate": 0.0
+        },
+        "claude-sonnet-4-5-20250929 vs gpt-5-chat-latest": {
+          "intersection": 9,
+          "union": 11,
+          "rate": 0.8181818181818182
+        },
+        "claude-sonnet-4-5-20250929 vs grok-4-fast-non-reasoning": {
+          "intersection": 10,
+          "union": 11,
+          "rate": 0.9090909090909091
+        },
+        "gemini-3-flash-preview vs gpt-5-chat-latest": {
+          "intersection": 0,
+          "union": 10,
+          "rate": 0.0
+        },
+        "gemini-3-flash-preview vs grok-4-fast-non-reasoning": {
+          "intersection": 0,
+          "union": 11,
+          "rate": 0.0
+        },
+        "gpt-5-chat-latest vs grok-4-fast-non-reasoning": {
+          "intersection": 10,
+          "union": 11,
+          "rate": 0.9090909090909091
+        }
+      },
+      "extraction_baseline": "grok-4-fast-non-reasoning",
+      "assessed_sentences": 11,
+      "assessed_claims": 16,
+      "claims_per_sentence": 1.4545454545454546,
+      "web_search_enabled": true,
+      "query_model": "gpt-5-chat-latest",
+      "assessment_models": [
+        {
+          "id": 199,
+          "name": "claude-opus-4-5-20251101",
+          "provider": "Anthropic"
+        },
+        {
+          "id": 168,
+          "name": "claude-sonnet-4-5-20250929",
+          "provider": "Anthropic"
+        },
+        {
+          "id": 200,
+          "name": "gemini-3-flash-preview",
+          "provider": "Google"
+        },
+        {
+          "id": 172,
+          "name": "gpt-5-chat-latest",
+          "provider": "OpenAI"
+        },
+        {
+          "id": 173,
+          "name": "grok-4-fast-non-reasoning",
+          "provider": "xAI"
+        }
+      ],
+      "assessed_at": "2026-03-08T22:11:21.008300",
+      "sentences": [
+        {
+          "sentence_index": 1,
+          "sentence_text": "shed 92,000 jobs in February, a sharp and unexpected setback for the labor market after economists had forecast an increase in hiring last month.",
+          "claims": [
+            {
+              "claim": "The U.S. shed 92,000 jobs in February",
+              "category": "statistical",
+              "assessments": [
+                {
+                  "model_id": 199,
+                  "model_name": "claude-opus-4-5-20251101",
+                  "provider": "Anthropic",
+                  "verdict": "not_supported",
+                  "reasoning": "The web search results do not provide the total number of jobs lost in February 2026. While Source 5 mentions specific sector losses (healthcare shed 28,000 jobs, leisure and hospitality fell by 27,000 jobs), it does not state the overall figure of 92,000 jobs lost. Sources 2, 3, and 4 discuss revisions to November and December employment figures but do not mention the February total job change.",
+                  "sources": [
+                    "https://www.hiringlab.org/2026/03/06/february-2026-jobs-report-overwhelmingly-disappointing/",
+                    "https://www.bls.gov/news.release/empsit.nr0.htm",
+                    "https://www.bls.gov/news.release/empsit.htm"
+                  ],
+                  "note": "The sources confirm February 2026 was a disappointing jobs report with losses in multiple sectors, but the specific total of 92,000 jobs lost is not stated in the available search results."
+                },
+                {
+                  "model_id": 168,
+                  "model_name": "claude-sonnet-4-5-20250929",
+                  "provider": "Anthropic",
+                  "verdict": "supported",
+                  "reasoning": "Source 5 explicitly describes the February 2026 jobs report as 'overwhelmingly disappointing' and details that multiple sectors shed jobs, including healthcare losing 28,000 jobs and leisure and hospitality falling by 27,000 jobs. While Source 5 doesn't state the exact total of 92,000 jobs lost, it confirms substantial job losses occurred in February across multiple sectors, with only a few sectors adding jobs. The sources from the Bureau of Labor Statistics (Sources 2-4) are the official February 2026 employment reports that would contain this data, though the specific total isn't quoted in the excerpts provided.",
+                  "sources": [
+                    "https://www.hiringlab.org/2026/03/06/february-2026-jobs-report-overwhelmingly-disappointing/",
+                    "https://www.bls.gov/news.release/empsit.nr0.htm",
+                    "https://www.bls.gov/news.release/empsit.toc.htm"
+                  ]
+                },
+                {
+                  "model_id": 200,
+                  "model_name": "gemini-3-flash-preview",
+                  "provider": "Google",
+                  "verdict": "error",
+                  "reasoning": "Client error '429 Too Many Requests' for url 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=REDACTED'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+                  "sources": []
+                },
+                {
+                  "model_id": 172,
+                  "model_name": "gpt-5-chat-latest",
+                  "provider": "OpenAI",
+                  "verdict": "not_supported",
+                  "reasoning": "None of the provided sources mention a total U.S. job loss of 92,000 in February. The Bureau of Labor Statistics releases cited ([Source 2], [Source 3], [Source 4]) discuss revisions to prior months but do not provide February employment change figures. The Hiring Lab article ([Source 5]) notes sectoral declines but does not quantify an overall national job loss. Therefore, there is no evidence supporting the claim that the U.S. shed 92,000 jobs in February.",
+                  "sources": [
+                    "https://www.bls.gov/news.release/empsit.htm",
+                    "https://www.bls.gov/news.release/empsit.nr0.htm",
+                    "https://www.bls.gov/news.release/empsit.toc.htm",
+                    "https://www.hiringlab.org/2026/03/06/february-2026-jobs-report-overwhelmingly-disappointing/"
+                  ]
+                },
+                {
+                  "model_id": 173,
+                  "model_name": "grok-4-fast-non-reasoning",
+                  "provider": "xAI",
+                  "verdict": "not_supported",
+                  "reasoning": "The web search results do not contain any information confirming or contradicting a loss of 92,000 jobs in February, with sources focusing on revisions to November and December employment changes or general statements without specific February figures. Source 1 provides a vague optimistic statement on job growth without mentioning job losses. Sources 2, 3, and 4 discuss revisions to prior months' data, and Source 5 mentions sector-specific losses totaling around 55,000 but does not indicate an overall net loss of 92,000 jobs.",
+                  "sources": [
+                    "https://www.dol.gov/newsroom/releases/osec/osec20260306",
+                    "https://www.bls.gov/news.release/empsit.htm",
+                    "https://www.bls.gov/news.release/empsit.nr0.htm",
+                    "https://www.bls.gov/news.release/empsit.toc.htm",
+                    "https://www.hiringlab.org/2026/03/06/february-2026-jobs-report-overwhelmingly-disappointing/"
+                  ],
+                  "note": "The search results appear to reference a future or hypothetical 2026 period, but no direct data supports the specific claim of a 92,000 job loss in February."
+                }
+              ],
+              "source_hint": "Labor Department employment report",
+              "web_sources": [
+                {
+                  "title": "Secretary Chavez-DeRemer statement on February jobs report",
+                  "url": "https://www.dol.gov/newsroom/releases/osec/osec20260306",
+                  "content": "\u201cAs wages continue to outpace inflation, and as the Working Families Tax Cuts help employers and job creators keep even more of their hard-earned money, I\u2019m optimistic that job growth will continue as we undo the Biden-era catastrophe of soaring prices and stagnant wages.\u201d\n\nAgency\n\nOffice of the Secretary\n\nDate\n\nMarch 6, 2026\n\nRelease Number\n\n26-446-NAT\n\nMedia Contact: Courtney Parella\n\nPhone Number\n\n(202) 693-4676\n\nEmail\n\nparella.courtney.e@dol.gov\n\nShare This\n\n Facebook\n Linkedin\n Twitter\n Email\n\nMore News Releases\n\nPreviousUnemployment Insurance Weekly Claims Report [...] Back \n   + About U",
+                  "score": 0.9412289
+                },
+                {
+                  "title": "Employment Situation News Release - Bureau of Labor Statistics",
+                  "url": "https://www.bls.gov/news.release/empsit.htm",
+                  "content": "tables B-2 and B-7.)\r\n\r\nThe change in total nonfarm payroll employment for November was revised down by 15,000, from\r\n+56,000 to +41,000, and the change for December was revised down by 2,000, from +50,000 to\r\n+48,000. With these revisions, employment in November and December combined is 17,000 lower\r\nthan previously reported. (Monthly revisions result from additional reports received from\r\nbusinesses and government agencies since the last published estimates and from the\r\nrecalculation of seasonal factors. The annual benchmark process also contributed to the\r\nNovember and December revisions.)",
+                  "score": 0.9222657
+                },
+                {
+                  "title": "Employment Situation Summary - 2026 M02 Results",
+                  "url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+                  "content": "tables B-2 and B-7.)\r\n\r\nThe change in total nonfarm payroll employment for November was revised down by 15,000, from\r\n+56,000 to +41,000, and the change for December was revised down by 2,000, from +50,000 to\r\n+48,000. With these revisions, employment in November and December combined is 17,000 lower\r\nthan previously reported. (Monthly revisions result from additional reports received from\r\nbusinesses and government agencies since the last published estimates and from the\r\nrecalculation of seasonal factors. The annual benchmark process also contributed to the\r\nNovember and December revisions.)",
+                  "score": 0.9039154
+                },
+                {
+                  "title": "Employment Situation - 2026 M02 Results - BLS.gov",
+                  "url": "https://www.bls.gov/news.release/empsit.toc.htm",
+                  "content": "Table B-9. Indexes of aggregate weekly hours and payrolls for production and nonsupervisory employees on private nonfarm payrolls by industry sector, seasonally adjusted(1)\n\nAccess to historical data for the \"A\" tables of the Employment Situation News Release\n\nAccess to historical data for the \"B\" tables of the Employment Situation News Release\n\nHTML version of the entire news release\n\nThe PDF version of the news release\n\nNews release charts\n\nSupplemental Files Table of Contents\n\nLast Modified Date: February 11, 2026 \n\n   Home\n   Subjects\n   Data Tools\n   Publications\n   Economic Releases\n   C",
+                  "score": 0.9035075
+                },
+                {
+                  "title": "February 2026 Jobs Report: An Overwhelmingly Disappointing Report",
+                  "url": "https://www.hiringlab.org/2026/03/06/february-2026-jobs-report-overwhelmingly-disappointing/",
+                  "content": "The healthcare subsector shed 28,000 jobs in February after adding an average of 30,000 jobs per month over the past 12 months. While this was partially driven by strikes, the change is still notable. Leisure and hospitality also fell by 27,000 jobs, as employment declined in accommodation and food service roles. The only sectors to add jobs in February were financial activities, wholesale trade, retail trade, utilities, and other services.\n\nThe labor market has continued to hum along in recent years, often balancing bright spots in the data with otherwise glum news. Unfortunately, today\u2019s rep",
+                  "score": 0.8969848
+                }
+              ],
+              "search_queries": [
+                "BLS Employment Situation February 2026 nonfarm payrolls site:bls.gov",
+                "U.S. Department of Labor Employment Situation news release February 2026 jobs report"
+              ]
+            }
+          ],
+          "sentence_verdicts": {
+            "claude-opus-4-5-20251101": "not_supported",
+            "claude-sonnet-4-5-20250929": "supported",
+            "gemini-3-flash-preview": "error",
+            "gpt-5-chat-latest": "not_supported",
+            "grok-4-fast-non-reasoning": "not_supported"
+          }
+        },
+        {
+          "sentence_index": 2,
+          "sentence_text": "The nation's unemployment rate ticked up to 4.4% last month from 4.3% in January.",
+          "claims": [
+            {
+              "claim": "The nation's unemployment rate ticked up to 4.4% in February from 4.3% in January",
+              "category": "statistical",
+              "assessments": [
+                {
+                  "model_id": 199,
+                  "model_name": "claude-opus-4-5-20251101",
+                  "provider": "Anthropic",
+                  "verdict": "supported",
+                  "reasoning": "The claim that the unemployment rate ticked up to 4.4% in February from 4.3% in January is directly confirmed by multiple sources. Source 1 explicitly states 'the unemployment rate ticked up to 4.4% from 4.3% in January.' Source 2 also confirms 'unemployment rate rises to 4.4%' in the February 2026 jobs report.",
+                  "sources": [
+                    "https://resumehog.com/blog/posts/february-2026-jobs-report-92k-lost-what-it-means-for-you.html",
+                    "https://www.cnbc.com/2026/03/06/february-2026-jobs-report.html"
+                  ]
+                },
+                {
+                  "model_id": 168,
+                  "model_name": "claude-sonnet-4-5-20250929",
+                  "provider": "Anthropic",
+                  "verdict": "supported",
+                  "reasoning": "The claim that unemployment rose to 4.4% in February from 4.3% in January is directly confirmed by multiple sources. Source 1 explicitly states \"the unemployment rate ticked up to 4.4% from 4.3% in January\" and Source 2 confirms \"unemployment rate rises to 4.4%\" in its headline. Both sources are reporting on the February 2026 jobs report from the Bureau of Labor Statistics, providing consistent confirmation of the specific figures in the claim.",
+                  "sources": [
+                    "https://resumehog.com/blog/posts/february-2026-jobs-report-92k-lost-what-it-means-for-you.html",
+                    "https://www.cnbc.com/2026/03/06/february-2026-jobs-report.html"
+                  ]
+                },
+                {
+                  "model_id": 200,
+                  "model_name": "gemini-3-flash-preview",
+                  "provider": "Google",
+                  "verdict": "error",
+                  "reasoning": "Client error '429 Too Many Requests' for url 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=REDACTED'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+                  "sources": []
+                },
+                {
+                  "model_id": 172,
+                  "model_name": "gpt-5-chat-latest",
+                  "provider": "OpenAI",
+                  "verdict": "supported",
+                  "reasoning": "Both ResumeHog [Source 1] and CNBC [Source 2] explicitly state that the U.S. unemployment rate rose to 4.4% in February 2026 from 4.3% in January, according to the Bureau of Labor Statistics. These sources directly confirm the claim\u2019s figures and direction of change.",
+                  "sources": [
+                    "https://resumehog.com/blog/posts/february-2026-jobs-report-92k-lost-what-it-means-for-you.html",
+                    "https://www.cnbc.com/2026/03/06/february-2026-jobs-report.html"
+                  ]
+                },
+                {
+                  "model_id": 173,
+                  "model_name": "grok-4-fast-non-reasoning",
+                  "provider": "xAI",
+                  "verdict": "supported",
+                  "reasoning": "Sources 1 and 2 directly confirm the claim, stating that the U.S. unemployment rate rose to 4.4% in February from 4.3% in January, based on the Bureau of Labor Statistics report. Source 5 appears to reference the relevant BLS employment situation summary for February 2026, aligning with the timeframe of the claim. Although Sources 3 and 4 provide general BLS information without specific February 2026 details, the core assertion is verified by the primary sources.",
+                  "sources": [
+                    "https://resumehog.com/blog/posts/february-2026-jobs-report-92k-lost-what-it-means-for-you.html",
+                    "https://www.cnbc.com/2026/03/06/february-2026-jobs-report.html",
+                    "https://www.bls.gov/news.release/empsit.nr0.htm"
+                  ]
+                }
+              ],
+              "source_hint": "Labor Department employment report",
+              "web_sources": [
+                {
+                  "title": "February 2026 Jobs Report: 92K Lost - What It Means for You",
+                  "url": "https://resumehog.com/blog/posts/february-2026-jobs-report-92k-lost-what-it-means-for-you.html",
+                  "content": "# February 2026 Jobs Report: 92K Lost - What It Means for You\n\nAuthor: Ishtiaque Hossain AKA Porkychan\n\n## The Headline: 92,000 Jobs Lost, Unemployment Rises to 4.4%\n\nFriday's jobs report landed like a cold bucket of water. According to the Bureau of Labor Statistics, the U.S. economy shed 92,000 jobs in February 2026 and the unemployment rate ticked up to 4.4% from 4.3% in January. Economists polled by FactSet had expected a gain of around 60,000 jobs. That is a miss of more than 150,000 jobs in the wrong direction. [...] ## Long-Term Unemployment Is Quietly Climbing\n\nOne of the most overlook",
+                  "score": 0.95912766
+                },
+                {
+                  "title": "February 2026 jobs report: - CNBC",
+                  "url": "https://www.cnbc.com/2026/03/06/february-2026-jobs-report.html",
+                  "content": "Join IC\n\nPRO\n\nJoin Pro\n\nLivestream\n\nEconomy\n\n# U.S. payrolls unexpectedly fell by 92,000 in February; unemployment rate rises to 4.4%\n\nthumbnail\n\nJeff Cox@jeff.cox.7528@JeffCoxCNBCcom\n\nWATCH LIVE\n\nThe U.S. economy lost jobs in February, a month marred by severe winter weather and a strike at a major health care provider, the Bureau of Labor Statistics reported Friday.\n\nNonfarm payrolls fell by 92,000 for the month, compared to the estimate for 50,000 and below the downwardly revised January total of 126,000. February marked the third time in the past five months that payrolls declined, followi",
+                  "score": 0.9387167
+                },
+                {
+                  "title": "Bureau of Labor Statistics",
+                  "url": "https://www.bls.gov/",
+                  "content": "HTML | PDF | RSS | Charts\n\n 03/05/2026 U.S. import prices up 0.2% in January on higher nonfuel prices; export prices rise 0.6% 03/03/2026 Unemployment rate for people with a disability increases to 8.3% in 2025 02/27/2026 PPI for final demand advances 0.5% in January; services rise 0.8%, goods decrease 0.3% 02/26/2026 Gross job losses are 7.9 million in 2nd quarter 2025; gross job gains are 7.6 million\n\nAll Releases\n\n   Northeast\n   Mid-Atlantic\n   Southeast\n   Midwest\n   Southwest\n   Mountain-Plains\n   West\n\nImage 5: boston\n\nImage 6: philadelphia\n\nImage 7: atlanta\n\nImage 8: chicago\n\nImage 9: ",
+                  "score": 0.8488849
+                },
+                {
+                  "title": "Employment Situation News Release - Bureau of Labor Statistics",
+                  "url": "https://www.bls.gov/news.release/empsit.htm",
+                  "content": "tables B-2 and B-7.)\r\n\r\nThe change in total nonfarm payroll employment for November was revised down by 15,000, from\r\n+56,000 to +41,000, and the change for December was revised down by 2,000, from +50,000 to\r\n+48,000. With these revisions, employment in November and December combined is 17,000 lower\r\nthan previously reported. (Monthly revisions result from additional reports received from\r\nbusinesses and government agencies since the last published estimates and from the\r\nrecalculation of seasonal factors. The annual benchmark process also contributed to the\r\nNovember and December revisions.)",
+                  "score": 0.81418616
+                },
+                {
+                  "title": "Employment Situation Summary - 2026 M02 Results",
+                  "url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+                  "content": "Access to historical data for the \"B\" tables of the Employment Situation News Release\n\nHTML version of the entire news release\n\nThe PDF version of the news release\n\nNews release charts\n\nSupplemental Files Table of Contents\n\nTable of Contents\n\nLast Modified Date: February 11, 2026 \n\n   Home\n   Subjects\n   Data Tools\n   Publications\n   Economic Releases\n   Classroom\n   Beta\n\nImage 11: U.S. Bureau of Labor Statistics Logo \n\nU.S. Bureau of Labor StatisticsCurrent Population Survey Office of Employment and Unemployment Statistics Suitland Federal Center Floor 3 4600 Silver Hill Road Washington, DC ",
+                  "score": 0.8080827
+                }
+              ],
+              "search_queries": [
+                "BLS Employment Situation February 2026 unemployment rate site:bls.gov",
+                "Bureau of Labor Statistics unemployment rate February 2026 data"
+              ]
+            }
+          ],
+          "sentence_verdicts": {
+            "claude-opus-4-5-20251101": "supported",
+            "claude-sonnet-4-5-20250929": "supported",
+            "gemini-3-flash-preview": "error",
+            "gpt-5-chat-latest": "supported",
+            "grok-4-fast-non-reasoning": "supported"
+          }
+        },
+        {
+          "sentence_index": 3,
+          "sentence_text": "By the numbers\nEconomists polled by FactSet had predicted a payroll gain of 60,000 last month.",
+          "claims": [
+            {
+              "claim": "Economists polled by FactSet had predicted a payroll gain of 60,000 in February",
+              "category": "statistical",
+              "assessments": [
+                {
+                  "model_id": 199,
+                  "model_name": "claude-opus-4-5-20251101",
+                  "provider": "Anthropic",
+                  "verdict": "supported",
+                  "reasoning": "Multiple sources confirm that economists polled by FactSet had predicted a payroll gain of 60,000 jobs in February. Source 2 states 'Economists polled by FactSet had expected a gain of around 60,000 jobs.' Source 3 confirms 'The consensus estimates were for a net gain of 60,000 jobs... FactSet estimates show.' Source 5 also references FactSet projecting nonfarm payrolls to rise by 60,000 for February 2026.",
+                  "sources": [
+                    "https://resumehog.com/blog/posts/february-2026-jobs-report-92k-lost-what-it-means-for-you.html",
+                    "https://www.cnn.com/2026/03/06/economy/us-jobs-report-february",
+                    "https://insight.factset.com/six-economic-charts-to-watch-in-2022-united-states"
+                  ]
+                },
+                {
+                  "model_id": 168,
+                  "model_name": "claude-sonnet-4-5-20250929",
+                  "provider": "Anthropic",
+                  "verdict": "supported",
+                  "reasoning": "Multiple sources confirm that economists polled by FactSet predicted a payroll gain of 60,000 jobs in February. Source 2 explicitly states 'Economists polled by FactSet had expected a gain of around 60,000 jobs.' Source 3 confirms 'The consensus estimates were for a net gain of 60,000 jobs and the unemployment rate to hold steady, FactSet estimates show.' Source 5 also references this figure in its title: 'Total Nonfarm Payrolls For February 2026 Are Projected To Rise By 60,000.'",
+                  "sources": [
+                    "https://resumehog.com/blog/posts/february-2026-jobs-report-92k-lost-what-it-means-for-you.html",
+                    "https://www.cnn.com/2026/03/06/economy/us-jobs-report-february",
+                    "https://insight.factset.com/six-economic-charts-to-watch-in-2022-united-states"
+                  ]
+                },
+                {
+                  "model_id": 200,
+                  "model_name": "gemini-3-flash-preview",
+                  "provider": "Google",
+                  "verdict": "error",
+                  "reasoning": "Client error '429 Too Many Requests' for url 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=REDACTED'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+                  "sources": []
+                },
+                {
+                  "model_id": 172,
+                  "model_name": "gpt-5-chat-latest",
+                  "provider": "OpenAI",
+                  "verdict": "supported",
+                  "reasoning": "Multiple sources confirm that economists polled by FactSet had predicted a payroll gain of about 60,000 jobs in February. Source [2] explicitly states that economists polled by FactSet expected a gain of around 60,000 jobs, and Source [3] also reports that FactSet estimates showed a consensus forecast of a 60,000-job increase. Source [5] further corroborates this figure, noting FactSet\u2019s projection of a 60,000-job rise for February 2026.",
+                  "sources": [
+                    "https://resumehog.com/blog/posts/february-2026-jobs-report-92k-lost-what-it-means-for-you.html",
+                    "https://www.cnn.com/2026/03/06/economy/us-jobs-report-february",
+                    "https://insight.factset.com/six-economic-charts-to-watch-in-2022-united-states"
+                  ]
+                },
+                {
+                  "model_id": 173,
+                  "model_name": "grok-4-fast-non-reasoning",
+                  "provider": "xAI",
+                  "verdict": "supported",
+                  "reasoning": "Multiple sources confirm that economists polled by FactSet predicted a payroll gain of 60,000 jobs for February. [Source 2] explicitly states 'Economists polled by FactSet had expected a gain of around 60,000 jobs.' [Source 3] notes 'The consensus estimates were for a net gain of 60,000 jobs and the unemployment rate to hold steady, FactSet estimates show.' [Source 5] directly projects 'Total Nonfarm Payrolls For February 2026 Are Projected To Rise By 60,000' from FactSet Insight.",
+                  "sources": [
+                    "https://resumehog.com/blog/posts/february-2026-jobs-report-92k-lost-what-it-means-for-you.html",
+                    "https://www.cnn.com/2026/03/06/economy/us-jobs-report-february",
+                    "https://insight.factset.com/six-economic-charts-to-watch-in-2022-united-states"
+                  ]
+                }
+              ],
+              "source_hint": "FactSet economist poll",
+              "web_sources": [
+                {
+                  "title": "February Jobs Report to Show Hiring Cooldown, Steady ...",
+                  "url": "https://www.morningstar.com/economy/february-jobs-report-show-hiring-cooldown-steady-unemployment",
+                  "content": "Forecasters expect the economy added 70,000 jobs in February, down from January\u2019s 130,000. After edging lower in January, the unemployment rate is expected to hold steady at 4.3%, according to FactSet consensus estimates. Nationwide Insurance senior economist Ben Ayers expects a slower showing on the hiring front with only 40,000 jobs added. He says that\u2019s reflective of the current \u201clow-hire, low-fire\u201d economy. \u201cI wouldn\u2019t view this as a big step back, but certainly something more in line with what we saw toward the end of 2025 than the numbers that we saw in January.\u201d\n\n## January Jobs Report ",
+                  "score": 0.99995863
+                },
+                {
+                  "title": "February 2026 Jobs Report: 92K Lost - What It Means for You",
+                  "url": "https://resumehog.com/blog/posts/february-2026-jobs-report-92k-lost-what-it-means-for-you.html",
+                  "content": "# February 2026 Jobs Report: 92K Lost - What It Means for You\n\nAuthor: Ishtiaque Hossain AKA Porkychan\n\n## The Headline: 92,000 Jobs Lost, Unemployment Rises to 4.4%\n\nFriday's jobs report landed like a cold bucket of water. According to the Bureau of Labor Statistics, the U.S. economy shed 92,000 jobs in February 2026 and the unemployment rate ticked up to 4.4% from 4.3% in January. Economists polled by FactSet had expected a gain of around 60,000 jobs. That is a miss of more than 150,000 jobs in the wrong direction. [...] This is the practical reality of a \"no-hire, no-fire\" market, a term Fa",
+                  "score": 0.99978846
+                },
+                {
+                  "title": "The US economy lost 92,000 jobs in February and the ... - CNN",
+                  "url": "https://www.cnn.com/2026/03/06/economy/us-jobs-report-february",
+                  "content": "The unemployment rate edged higher to 4.4% from 4.3%.\n\nEconomists were expecting job growth to slow somewhat after a surprisingly strong January \u2013 in part due a major labor strike by health care workers and a deep cold snap that hit many US states. The consensus estimates were for a net gain of 60,000 jobs and the unemployment rate to hold steady, FactSet estimates show.\n\n\u201cWe had a labor market that nearly froze last year, and it seemed to show some signs of thawing, which made it slushy at best,\u201d Diane Swonk, chief economist at KPMG US, told CNN in an interview.",
+                  "score": 0.9979652
+                },
+                {
+                  "title": "US economy shed 92000 jobs in February, well below expectations",
+                  "url": "https://www.foxbusiness.com/economy/us-jobs-report-february-2026",
+                  "content": "### What does the February 2026 jobs report mean for the Fed and rate cuts?\n\nThe latest jobs data did little to shift the market's expectation that the Federal Reserve will leave interest rates unchanged when policymakers meet on March 17-18.\n\nThe CME FedWatch tool shows a 95.5% probability that the Fed will leave the benchmark federal funds rate unchanged at its current range of 3.5% to 3.75%.\n\nGET FOX BUSINESS ON THE GO BY CLICKING HERE\n\n### What does the February 2026 jobs report mean for the stock market?\n\nMarkets opened lower on Friday and declined further in response to the February jobs",
+                  "score": 0.9970879
+                },
+                {
+                  "title": "Six Economic Charts to Watch in 2022: United States - FactSet Insight",
+                  "url": "https://insight.factset.com/six-economic-charts-to-watch-in-2022-united-states",
+                  "content": "## Related Articles\n\nFeatured Image\n\n###### March 5, 2026\n\nTotal Nonfarm Payrolls For February 2026 Are Projected To Rise By 60,000\n\nStay updated with our monthly series analyzing nonfarm payroll data and job trends. Get expert insights and projections to...\n\nBy John Butters  |  Economics\n\nRead more\n\nFeatured Image\n\n###### February 12, 2026\n\nConsumer Price Index (CPI) for January 2026 is Projected to Rise 2.4% Year-Over-Year\n\nExplore FactSet's January 2025 CPI forecast, estimating a 2.4% rise. Get insights into inflation trends and economic impact for...\n\nBy John Butters  |  Economics\n\nRead mo",
+                  "score": 0.8755427
+                }
+              ],
+              "search_queries": [
+                "FactSet economist survey February 2026 payroll forecast site:factset.com",
+                "FactSet economic outlook February 2026 jobs report consensus estimate"
+              ]
+            }
+          ],
+          "sentence_verdicts": {
+            "claude-opus-4-5-20251101": "supported",
+            "claude-sonnet-4-5-20250929": "supported",
+            "gemini-3-flash-preview": "error",
+            "gpt-5-chat-latest": "supported",
+            "grok-4-fast-non-reasoning": "supported"
+          }
+        },
+        {
+          "sentence_index": 4,
+          "sentence_text": "February marks the third time in the last five months that the job market has shown job losses.",
+          "claims": [
+            {
+              "claim": "February marks the third time in the last five months that the job market has shown job losses",
+              "category": "historical",
+              "assessments": [
+                {
+                  "model_id": 199,
+                  "model_name": "claude-opus-4-5-20251101",
+                  "provider": "Anthropic",
+                  "verdict": "supported",
+                  "reasoning": "The claim is directly confirmed by Source 4 (CNBC), which states: 'February marked the third time in the past five months that payrolls declined.' This matches the claim exactly. Sources 1, 2, and 4 all confirm that February 2026 showed job losses of 92,000.",
+                  "sources": [
+                    "https://www.cnbc.com/2026/03/06/february-2026-jobs-report.html",
+                    "https://www.ihire.com/resourcecenter/employer/pages/the-february-2026-jobs-report",
+                    "https://finance.yahoo.com/news/fresh-bls-reporting-shows-job-141544997.html"
+                  ]
+                },
+                {
+                  "model_id": 168,
+                  "model_name": "claude-sonnet-4-5-20250929",
+                  "provider": "Anthropic",
+                  "verdict": "supported",
+                  "reasoning": "Source 4 (CNBC) directly confirms the claim, stating 'February marked the third time in the past five months that payrolls declined.' This exact statement matches the claim being assessed. Sources 1 and 2 also confirm that February 2026 showed job losses of 92,000, which is consistent with the claim's assertion about February being one of those months with job losses.",
+                  "sources": [
+                    "https://www.cnbc.com/2026/03/06/february-2026-jobs-report.html",
+                    "https://www.ihire.com/resourcecenter/employer/pages/the-february-2026-jobs-report",
+                    "https://finance.yahoo.com/news/fresh-bls-reporting-shows-job-141544997.html"
+                  ]
+                },
+                {
+                  "model_id": 200,
+                  "model_name": "gemini-3-flash-preview",
+                  "provider": "Google",
+                  "verdict": "error",
+                  "reasoning": "Client error '429 Too Many Requests' for url 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=REDACTED'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+                  "sources": []
+                },
+                {
+                  "model_id": 172,
+                  "model_name": "gpt-5-chat-latest",
+                  "provider": "OpenAI",
+                  "verdict": "supported",
+                  "reasoning": "CNBC explicitly reports that February marked the third time in the past five months that payrolls declined, confirming the claim\u2019s core assertion. Other sources, such as Yahoo Finance and iHire, corroborate that February saw job losses, aligning with the context of repeated declines in recent months.",
+                  "sources": [
+                    "https://www.cnbc.com/2026/03/06/february-2026-jobs-report.html",
+                    "https://finance.yahoo.com/news/fresh-bls-reporting-shows-job-141544997.html",
+                    "https://www.ihire.com/resourcecenter/employer/pages/the-february-2026-jobs-report"
+                  ]
+                },
+                {
+                  "model_id": 173,
+                  "model_name": "grok-4-fast-non-reasoning",
+                  "provider": "xAI",
+                  "verdict": "supported",
+                  "reasoning": "Source 4 directly confirms the claim, stating that 'February marked the third time in the past five months that payrolls declined.' Sources 1 and 2 corroborate the February job loss of 92,000, aligning with the context of the claim about recent job market declines.",
+                  "sources": [
+                    "https://www.cnbc.com/2026/03/06/february-2026-jobs-report.html",
+                    "https://www.ihire.com/resourcecenter/employer/pages/the-february-2026-jobs-report",
+                    "https://finance.yahoo.com/news/fresh-bls-reporting-shows-job-141544997.html"
+                  ]
+                }
+              ],
+              "source_hint": "Labor Department employment report",
+              "web_sources": [
+                {
+                  "title": "The February 2026 Jobs Report: The Current U.S. Employment ...",
+                  "url": "https://www.ihire.com/resourcecenter/employer/pages/the-february-2026-jobs-report",
+                  "content": "Employer Resources\n |\n Last Updated: March 06, 2026\n\nihire bls jobs report and jolts\n\n# The February 2026 Jobs Report: The Current U.S. Employment Situation\n\n ### Industry Insights\n\nThe BLS\u2019s February 2026 Employment Situation Summary is out: total nonfarm payroll employment decreased by 92,000 jobs and the unemployment rate increased slightly to 4.4%. A key driver of payroll losses was strikes within health care at Kaiser Permanente that have since ended.\n\nThe January 2026 JOLTS report will be released on March 13.\n\nChange in Nonfarm Payroll Employment\n\n|  |  |\n --- |\n| October \u201925 \n| Novembe",
+                  "score": 0.9659543
+                },
+                {
+                  "title": "BLS shows job losses, unemployment rate rise in February",
+                  "url": "https://finance.yahoo.com/news/fresh-bls-reporting-shows-job-141544997.html",
+                  "content": "...\n\nUpgrade to Premium\n\nQuartz\n\n# Jobs report: BLS shows job losses, unemployment rate rise in February\n\nQuartz \u00b7 Justin Sullivan/Getty Images\n\nCatherine Baab\n\nFri, March 6, 2026 at 9:15 AM EST 3 min read\n\nIn this article: \n\n StockStory Top Pick\n\n  ADP\n\n  +1.59%\n ORCL\n\n  -1.18%\n\nThe language of Friday's monthly jobs report makes the headline number sound like a nonevent. Total nonfarm payroll employment \"edged down\" by 92,000 in February, the Bureau of Labor Statistics said, while the unemployment rate \"changed little,\" up from 4.3% to 4.4%.\n\nBut the standardized verbal window-dressing partia",
+                  "score": 0.935964
+                },
+                {
+                  "title": "Employment Situation News Release - Bureau of Labor Statistics",
+                  "url": "https://www.bls.gov/news.release/empsit.htm",
+                  "content": "tables B-2 and B-7.)\r\n\r\nThe change in total nonfarm payroll employment for November was revised down by 15,000, from\r\n+56,000 to +41,000, and the change for December was revised down by 2,000, from +50,000 to\r\n+48,000. With these revisions, employment in November and December combined is 17,000 lower\r\nthan previously reported. (Monthly revisions result from additional reports received from\r\nbusinesses and government agencies since the last published estimates and from the\r\nrecalculation of seasonal factors. The annual benchmark process also contributed to the\r\nNovember and December revisions.)",
+                  "score": 0.92142147
+                },
+                {
+                  "title": "February 2026 jobs report: - CNBC",
+                  "url": "https://www.cnbc.com/2026/03/06/february-2026-jobs-report.html",
+                  "content": "Join IC\n\nPRO\n\nJoin Pro\n\nLivestream\n\nEconomy\n\n# U.S. payrolls unexpectedly fell by 92,000 in February; unemployment rate rises to 4.4%\n\nthumbnail\n\nJeff Cox@jeff.cox.7528@JeffCoxCNBCcom\n\nWATCH LIVE\n\nThe U.S. economy lost jobs in February, a month marred by severe winter weather and a strike at a major health care provider, the Bureau of Labor Statistics reported Friday.\n\nNonfarm payrolls fell by 92,000 for the month, compared to the estimate for 50,000 and below the downwardly revised January total of 126,000. February marked the third time in the past five months that payrolls declined, followi",
+                  "score": 0.9125066
+                },
+                {
+                  "title": "[PDF] The Institute Employment Report: February 2026",
+                  "url": "https://institute.bankofamerica.com/content/dam/economic-insights/monthly-employment-report-february-2026.pdf",
+                  "content": "and ADP data are seasonally adjusted, Bank of America data is not seasonally adjusted. BANK OF AMERICA INSTITUTE Exhibit 2: Unemployment payments into Bank of America customer accounts show fairly steady growth Number of households receiving unemployment payments (three-month moving average, YoY%, not seasonally adjusted (NSA)) and Continuing Claims (three-month moving average, YoY%, seasonally adjusted (SA)) Source: Bank of America internal data, Bloomberg Note: February Continuing Claims YoY data is average for weeks through February 13, 2026. BANK OF AMERICA INSTITUTE 0.0% 1.0% 2.0% 3.0% 4.",
+                  "score": 0.9094659
+                }
+              ],
+              "search_queries": [
+                "BLS Employment Situation February 2026 nonfarm payrolls report",
+                "Bureau of Labor Statistics monthly employment data job gains losses February 2026"
+              ]
+            }
+          ],
+          "sentence_verdicts": {
+            "claude-opus-4-5-20251101": "supported",
+            "claude-sonnet-4-5-20250929": "supported",
+            "gemini-3-flash-preview": "error",
+            "gpt-5-chat-latest": "supported",
+            "grok-4-fast-non-reasoning": "supported"
+          }
+        },
+        {
+          "sentence_index": 6,
+          "sentence_text": "That sector shed 28,000 jobs, which the Labor Department attributed to recent strike activity.",
+          "claims": [
+            {
+              "claim": "The health care sector shed 28,000 jobs in February",
+              "category": "statistical",
+              "assessments": [
+                {
+                  "model_id": 199,
+                  "model_name": "claude-opus-4-5-20251101",
+                  "provider": "Anthropic",
+                  "verdict": "supported",
+                  "reasoning": "The claim that the health care sector shed 28,000 jobs in February is directly confirmed by multiple sources. Source 1 states 'health care employment declined by 28,000 in February' and Source 5 confirms 'Health care... saw a loss of 28,000 due largely to a strike at Kaiser Permanente.'",
+                  "sources": [
+                    "https://www.bls.gov/news.release/empsit.nr0.htm?gsid=0715dc50-9cbd-4700-84d8-5856d2dd785a",
+                    "https://www.cnbc.com/2026/03/06/february-2026-jobs-report.html"
+                  ]
+                },
+                {
+                  "model_id": 168,
+                  "model_name": "claude-sonnet-4-5-20250929",
+                  "provider": "Anthropic",
+                  "verdict": "supported",
+                  "reasoning": "The claim that the health care sector shed 28,000 jobs in February is directly confirmed by multiple sources. Source 1 explicitly states 'care employment declined by 28,000 in February' and Source 5 states 'Health care, the primary growth driver in payrolls, saw a loss of 28,000.' Both sources attribute this decline primarily to strike activity at Kaiser Permanente.",
+                  "sources": [
+                    "https://www.bls.gov/news.release/empsit.nr0.htm?gsid=0715dc50-9cbd-4700-84d8-5856d2dd785a",
+                    "https://www.cnbc.com/2026/03/06/february-2026-jobs-report.html",
+                    "https://www.bls.gov/news.release/empsit.nr0.htm"
+                  ]
+                },
+                {
+                  "model_id": 200,
+                  "model_name": "gemini-3-flash-preview",
+                  "provider": "Google",
+                  "verdict": "error",
+                  "reasoning": "Client error '429 Too Many Requests' for url 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=REDACTED'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+                  "sources": []
+                },
+                {
+                  "model_id": 172,
+                  "model_name": "gpt-5-chat-latest",
+                  "provider": "OpenAI",
+                  "verdict": "supported",
+                  "reasoning": "Multiple sources confirm that the health care sector lost approximately 28,000 jobs in February. The official BLS Employment Situation Summary explicitly states that health care employment declined by 28,000 in February [Source 1], and CNBC also reports a 28,000 job loss in the sector due to strike activity [Source 5]. These figures directly support the claim.",
+                  "sources": [
+                    "https://www.bls.gov/news.release/empsit.nr0.htm?gsid=0715dc50-9cbd-4700-84d8-5856d2dd785a",
+                    "https://www.cnbc.com/2026/03/06/february-2026-jobs-report.html"
+                  ]
+                },
+                {
+                  "model_id": 173,
+                  "model_name": "grok-4-fast-non-reasoning",
+                  "provider": "xAI",
+                  "verdict": "supported",
+                  "reasoning": "The claim that the health care sector shed 28,000 jobs in February is directly confirmed by the BLS Employment Situation Summary, which states that health care employment declined by 28,000 in February due to strike activity [Source 1]. This figure is corroborated by CNBC's coverage of the February 2026 jobs report, noting a loss of 28,000 jobs in health care primarily from a strike at Kaiser Permanente [Source 5]. Other sources, such as the BLS overview and iHire summary, reference the health care employment decrease in the context of the February report without contradicting the specific number [Source 2, Source 3, Source 4].",
+                  "sources": [
+                    "https://www.bls.gov/news.release/empsit.nr0.htm?gsid=0715dc50-9cbd-4700-84d8-5856d2dd785a",
+                    "https://www.bls.gov/news.release/empsit.nr0.htm",
+                    "https://www.ihire.com/resourcecenter/employer/pages/the-february-2026-jobs-report",
+                    "https://www.bls.gov/ces/",
+                    "https://www.cnbc.com/2026/03/06/february-2026-jobs-report.html"
+                  ]
+                }
+              ],
+              "source_hint": "Labor Department employment report",
+              "web_sources": [
+                {
+                  "title": "Employment Situation Summary - 2026 M01 Results - BLS.gov",
+                  "url": "https://www.bls.gov/news.release/empsit.nr0.htm?gsid=0715dc50-9cbd-4700-84d8-5856d2dd785a",
+                  "content": "care employment declined by 28,000 in February, following a large increase in January (+77,000). Offices of physicians lost 37,000 jobs in February, primarily due to strike activity. Hospitals added 12,000 jobs. Over the prior 12 months, health care had added an average of 36,000 jobs per month. Employment in information continued to trend down in February (-11,000). The industry had lost an average of 5,000 jobs per month over the prior 12 months. In February, federal government employment continued to decline (-10,000). Since reaching a peak in October 2024, federal government employment is ",
+                  "score": 0.9536608
+                },
+                {
+                  "title": "Employment Situation Summary - 2026 M02 Results",
+                  "url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+                  "content": "Transmission of material in this news release is embargoed until USDL-26-0367 8:30 a.m. (ET) Friday, March 6, 2026 Technical information: Household data: (202) 691-6378  cpsinfo@bls.gov  www.bls.gov/cps Establishment data: (202) 691-6555  cesinfo@bls.gov  www.bls.gov/ces Media contact: (202) 691-5902  PressOffice@bls.gov THE EMPLOYMENT SITUATION -- FEBRUARY 2026 Total nonfarm payroll employment edged down by 92,000 in February, and the unemployment rate changed little at 4.4 percent, the U.S. Bureau of Labor Statistics reported today. Employment in health care decreased, reflecting strike acti",
+                  "score": 0.95132804
+                },
+                {
+                  "title": "The February 2026 Jobs Report: The Current U.S. Employment ...",
+                  "url": "https://www.ihire.com/resourcecenter/employer/pages/the-february-2026-jobs-report",
+                  "content": "Employer Resources\n |\n Last Updated: March 06, 2026\n\nihire bls jobs report and jolts\n\n# The February 2026 Jobs Report: The Current U.S. Employment Situation\n\n ### Industry Insights\n\nThe BLS\u2019s February 2026 Employment Situation Summary is out: total nonfarm payroll employment decreased by 92,000 jobs and the unemployment rate increased slightly to 4.4%. A key driver of payroll losses was strikes within health care at Kaiser Permanente that have since ended.\n\nThe January 2026 JOLTS report will be released on March 13.\n\nChange in Nonfarm Payroll Employment\n\n|  |  |\n --- |\n| October \u201925 \n| Novembe",
+                  "score": 0.94584644
+                },
+                {
+                  "title": "Current Employment Statistics - CES (National)",
+                  "url": "https://www.bls.gov/ces/",
+                  "content": "## Charts\n\nread more \u00bb\n\n## News Releases\n\nPayroll employment edges down 92,000 in February; unemployment rate changes little at 4.4% \n\n03/06/2026\n\nTotal nonfarm payroll employment edged down by 92,000 in February, and the unemployment rate changed little at 4.4 percent. Employment in health care decreased, reflecting strike activity. Employment in information and federal government continued to trend down.   \n  HTML |  PDF |  RSS |  Charts\n\nReal average hourly earnings for all employees increase 0.3% in January \n\n02/13/2026\n\nReal average hourly earnings for all employees increased 0.3 percent ",
+                  "score": 0.9134376
+                },
+                {
+                  "title": "February 2026 jobs report: - CNBC",
+                  "url": "https://www.cnbc.com/2026/03/06/february-2026-jobs-report.html",
+                  "content": "Health care, the primary growth driver in payrolls, saw a loss of 28,000 due largely to a strike at Kaiser Permanente that sidelined more than 30,000 workers in Hawaii and California. Though the strike has since been resolved, it occurred during the BLS survey week so it subtracted from the jobs total.\n\nInformation services, a sector hit by artificial intelligence-related cuts, also lost jobs, down 11,000 as part of a 12-month trend in which the sector has lost an average of 5,000 per month.\n\nFederal government employment also fell, off 10,000 for the month. President Donald Trump's efforts to",
+                  "score": 0.9039154
+                }
+              ],
+              "search_queries": [
+                "BLS Employment Situation February 2026 health care industry jobs",
+                "Bureau of Labor Statistics Current Employment Statistics February 2026 health care sector employment"
+              ]
+            }
+          ],
+          "sentence_verdicts": {
+            "claude-opus-4-5-20251101": "supported",
+            "claude-sonnet-4-5-20250929": "supported",
+            "gemini-3-flash-preview": "error",
+            "gpt-5-chat-latest": "supported",
+            "grok-4-fast-non-reasoning": "supported"
+          }
+        },
+        {
+          "sentence_index": 10,
+          "sentence_text": "On Friday, however, the Labor Department revised job growth for that month down by 4,000 and for December by 65,000, a sign that the labor market was weaker than previously thought.Even if the job market is stronger than it appears, experts said Friday that the February employment data is injecting a degree of uncertainty into the U.S.",
+          "claims": [
+            {
+              "claim": "The Labor Department revised job growth for January down by 4,000",
+              "category": "statistical",
+              "assessments": [
+                {
+                  "model_id": 199,
+                  "model_name": "claude-opus-4-5-20251101",
+                  "provider": "Anthropic",
+                  "verdict": "supported",
+                  "reasoning": "Source 2 (CNBC) explicitly states that February's job numbers were compared to 'the downwardly revised January total of 126,000.' Since Source 5 shows January's initial report was 130,000, the revision from 130,000 to 126,000 represents a downward revision of 4,000 jobs, confirming the claim.",
+                  "sources": [
+                    "https://www.cnbc.com/2026/03/06/february-2026-jobs-report.html",
+                    "https://www.bls.gov/ces/"
+                  ]
+                },
+                {
+                  "model_id": 168,
+                  "model_name": "claude-sonnet-4-5-20250929",
+                  "provider": "Anthropic",
+                  "verdict": "supported",
+                  "reasoning": "Source 2 explicitly states that February's job report showed 'below the downwardly revised January total of 126,000.' Source 1 and Source 5 both report that January 2026 nonfarm payroll employment rose by 130,000. The revision from 130,000 to 126,000 represents a downward revision of 4,000 jobs, which directly confirms the claim.",
+                  "sources": [
+                    "https://www.cnbc.com/2026/03/06/february-2026-jobs-report.html",
+                    "https://www.bls.gov/news.release/empsit.nr0.htm",
+                    "https://www.bls.gov/ces/"
+                  ]
+                },
+                {
+                  "model_id": 200,
+                  "model_name": "gemini-3-flash-preview",
+                  "provider": "Google",
+                  "verdict": "error",
+                  "reasoning": "Client error '429 Too Many Requests' for url 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=REDACTED'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+                  "sources": []
+                },
+                {
+                  "model_id": 172,
+                  "model_name": "gpt-5-chat-latest",
+                  "provider": "OpenAI",
+                  "verdict": "supported",
+                  "reasoning": "CNBC\u2019s February 2026 jobs report states that the January total was revised down to 126,000 from an earlier figure of 130,000, indicating a downward revision of 4,000 jobs. This matches the claim that the Labor Department revised job growth for January down by 4,000. The BLS release itself lists the updated January figure as 130,000 before revision, confirming the context of the adjustment.",
+                  "sources": [
+                    "https://www.cnbc.com/2026/03/06/february-2026-jobs-report.html",
+                    "https://www.bls.gov/news.release/empsit.nr0.htm"
+                  ]
+                },
+                {
+                  "model_id": 173,
+                  "model_name": "grok-4-fast-non-reasoning",
+                  "provider": "xAI",
+                  "verdict": "not_supported",
+                  "reasoning": "The claim refers to a revision of January job growth downward by 4,000, but the provided sources do not mention any such revision. [Source 1] and [Source 5] report the initial January 2026 nonfarm payroll growth as +130,000, while [Source 2] notes a downward revision to +126,000 in the February report, which is a 4,000 reduction but not explicitly stated as such in the sources. No source confirms a revision specifically 'down by 4,000' for January, making the core assertion unverifiable from the results.",
+                  "sources": [
+                    "https://www.bls.gov/news.release/empsit.nr0.htm",
+                    "https://www.cnbc.com/2026/03/06/february-2026-jobs-report.html",
+                    "https://www.bls.gov/ces/"
+                  ],
+                  "note": "The sources imply a 4,000 downward revision from 130,000 to 126,000 for January 2026, but this is not directly stated, so the claim cannot be confirmed as supported."
+                }
+              ],
+              "source_hint": "Labor Department employment report",
+              "web_sources": [
+                {
+                  "title": "Employment Situation Summary - 2026 M02 Results",
+                  "url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+                  "content": "Transmission of material in this news release is embargoed until\t               USDL-26-0169\r\n8:30 a.m. (ET) Wednesday, February 11, 2026\r\n\r\nTechnical information: \r\n Household data:\t(202) 691-6378    cpsinfo@bls.gov    www.bls.gov/cps\r\n Establishment data:\t(202) 691-6555    cesinfo@bls.gov    www.bls.gov/ces\r\n\r\nMedia contact:\t        (202) 691-5902    PressOffice@bls.gov\r\n\r\n\r\n                         THE EMPLOYMENT SITUATION -- JANUARY 2026\r\n                         \r\n     \r\nTotal nonfarm payroll employment rose by 130,000 in January, and the unemployment rate changed\r\nlittle at 4.3 percent, ",
+                  "score": 0.92731744
+                },
+                {
+                  "title": "February 2026 jobs report: - CNBC",
+                  "url": "https://www.cnbc.com/2026/03/06/february-2026-jobs-report.html",
+                  "content": "Join IC\n\nPRO\n\nJoin Pro\n\nLivestream\n\nEconomy\n\n# U.S. payrolls unexpectedly fell by 92,000 in February; unemployment rate rises to 4.4%\n\nthumbnail\n\nJeff Cox@jeff.cox.7528@JeffCoxCNBCcom\n\nWATCH LIVE\n\nThe U.S. economy lost jobs in February, a month marred by severe winter weather and a strike at a major health care provider, the Bureau of Labor Statistics reported Friday.\n\nNonfarm payrolls fell by 92,000 for the month, compared to the estimate for 50,000 and below the downwardly revised January total of 126,000. February marked the third time in the past five months that payrolls declined, followi",
+                  "score": 0.8886914
+                },
+                {
+                  "title": "[PDF] The Institute Employment Report: February 2026",
+                  "url": "https://institute.bankofamerica.com/content/dam/economic-insights/monthly-employment-report-february-2026.pdf",
+                  "content": "Bank of America payrolls estimate -50% -25% 0% 25% 50% 75% 2023 2024 2025 2026 Unemployment payments into Bank of America accounts BLS Continuing Claims I N S T I T U T E Accessible version 2 04 March 2026 I N S T I T U T E The latest Bureau of Labor Statistics\u2019 (BLS) payroll estimate was revised lower following the benchmark revision process. This downward adjustment means BLS payrolls growth is now estimated to be lower in 2024/25 than previously estimated, implying our estimate of payrolls growth appears stronger than the official data over the period. Nonetheless, in our view, the positive",
+                  "score": 0.86331123
+                },
+                {
+                  "title": "Employment Situation - 2026 M02 Results - BLS.gov",
+                  "url": "https://www.bls.gov/news.release/empsit.toc.htm",
+                  "content": "Table B-9. Indexes of aggregate weekly hours and payrolls for production and nonsupervisory employees on private nonfarm payrolls by industry sector, seasonally adjusted(1)\n\nAccess to historical data for the \"A\" tables of the Employment Situation News Release\n\nAccess to historical data for the \"B\" tables of the Employment Situation News Release\n\nHTML version of the entire news release\n\nThe PDF version of the news release\n\nNews release charts\n\nSupplemental Files Table of Contents\n\nLast Modified Date: February 11, 2026 \n\n   Home\n   Subjects\n   Data Tools\n   Publications\n   Economic Releases\n   C",
+                  "score": 0.8443195
+                },
+                {
+                  "title": "Current Employment Statistics - CES (National)",
+                  "url": "https://www.bls.gov/ces/",
+                  "content": "Total nonfarm payroll employment rose by 130,000 in January 2026, after changing little in 2025 (+15,000 per month on average). Job gains occurred in health care, social assistance, and construction, while federal government and financial activities lost jobs in January.read more\u00bb\n\n\n\n12\n\n\n\nLatest Numbers\n\nImage 13: RSS\nChange in Total Nonfarm Payroll Employment:+130,000(p) in Jan 2026Image 14: Historical Data\n\nChange in Total Private Average Hourly Earnings for All Employees:+$0.15(p) in Jan 2026Image 15: Historical Data\n\nChange in Total Private Average Weekly Hours for All Employees:+0.1(p) i",
+                  "score": 0.8156003
+                }
+              ],
+              "search_queries": [
+                "BLS Employment Situation February 2026 revised January 2026 nonfarm payrolls",
+                "Bureau of Labor Statistics January 2026 payroll revision site:bls.gov"
+              ]
+            },
+            {
+              "claim": "The Labor Department revised job growth for December down by 65,000",
+              "category": "statistical",
+              "assessments": [
+                {
+                  "model_id": 199,
+                  "model_name": "claude-opus-4-5-20251101",
+                  "provider": "Anthropic",
+                  "verdict": "not_supported",
+                  "reasoning": "The sources indicate that the December job growth revision was much smaller than claimed. According to [Source 3] and [Source 4], the change for December was revised down by only 2,000 (from +50,000 to +48,000), not 65,000 as the claim states. This is a significant discrepancy that contradicts the claim.",
+                  "sources": [
+                    "https://www.bls.gov/news.release/empsit.nr0.htm",
+                    "https://www.bls.gov/news.release/empsit.htm"
+                  ],
+                  "note": "The BLS data shows December was revised down by 2,000, not 65,000. The claim may be referring to a different time period or report not captured in these search results."
+                },
+                {
+                  "model_id": 168,
+                  "model_name": "claude-sonnet-4-5-20250929",
+                  "provider": "Anthropic",
+                  "verdict": "not_supported",
+                  "reasoning": "The claim states that the Labor Department revised December job growth down by 65,000. However, Sources 3 and 4 (both BLS Employment Situation releases) explicitly state that December was revised down by only 2,000, from +50,000 to +48,000. The sources directly contradict the claimed revision amount of 65,000.",
+                  "sources": [
+                    "https://www.bls.gov/news.release/empsit.nr0.htm",
+                    "https://www.bls.gov/news.release/empsit.htm"
+                  ]
+                },
+                {
+                  "model_id": 200,
+                  "model_name": "gemini-3-flash-preview",
+                  "provider": "Google",
+                  "verdict": "error",
+                  "reasoning": "Client error '429 Too Many Requests' for url 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=REDACTED'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+                  "sources": []
+                },
+                {
+                  "model_id": 172,
+                  "model_name": "gpt-5-chat-latest",
+                  "provider": "OpenAI",
+                  "verdict": "not_supported",
+                  "reasoning": "The official BLS Employment Situation Summary [Source 3] states that the change in total nonfarm payroll employment for December was revised down by only 2,000, not 65,000. None of the other sources mention a 65,000 downward revision for December. Therefore, the claim that the Labor Department revised job growth for December down by 65,000 is not supported by the available evidence.",
+                  "sources": [
+                    "https://www.bls.gov/news.release/empsit.nr0.htm"
+                  ]
+                },
+                {
+                  "model_id": 173,
+                  "model_name": "grok-4-fast-non-reasoning",
+                  "provider": "xAI",
+                  "verdict": "not_supported",
+                  "reasoning": "The claim refers to a downward revision of 65,000 jobs for December, but the provided sources do not confirm this figure. Sources 3 and 4 mention a minor downward revision of only 2,000 jobs for December (from +50,000 to +48,000), combined with a 15,000 revision for November, totaling 17,000 lower. Source 2 discusses negligible two-month revisions of -17,000 (mainly in November), which aligns with the small adjustments in Sources 3 and 4, not a 65,000 revision for December specifically. Sources 1 and 5 are irrelevant to December revisions.",
+                  "sources": [
+                    "https://www.bls.gov/news.release/empsit.nr0.htm",
+                    "https://www.bls.gov/news.release/empsit.htm",
+                    "https://media.marketnews.com/US_Employment_Report_Feb2026_781838d85a.pdf"
+                  ],
+                  "note": "The sources appear to reference revisions from early 2026 reports, possibly for late 2025 data, but none match the claimed 65,000 figure for December."
+                }
+              ],
+              "source_hint": "Labor Department employment report",
+              "web_sources": [
+                {
+                  "title": "The February 2026 Jobs Report: The Current U.S. Employment ...",
+                  "url": "https://www.ihire.com/resourcecenter/employer/pages/the-february-2026-jobs-report",
+                  "content": "Employer Resources\n |\n Last Updated: March 06, 2026\n\nihire bls jobs report and jolts\n\n# The February 2026 Jobs Report: The Current U.S. Employment Situation\n\n ### Industry Insights\n\nThe BLS\u2019s February 2026 Employment Situation Summary is out: total nonfarm payroll employment decreased by 92,000 jobs and the unemployment rate increased slightly to 4.4%. A key driver of payroll losses was strikes within health care at Kaiser Permanente that have since ended.\n\nThe January 2026 JOLTS report will be released on March 13.\n\nChange in Nonfarm Payroll Employment\n\n|  |  |\n --- |\n| October \u201925 \n| Novembe",
+                  "score": 0.9465623
+                },
+                {
+                  "title": "[PDF] U.S. Employment Insight: Feb 2026 - MNI",
+                  "url": "https://media.marketnews.com/US_Employment_Report_Feb2026_781838d85a.pdf",
+                  "content": "AHE (%) 0.41 0.3 3.71 3.7 Source: Bloomberg Finance L.P., BLS, MNI M/M Growth Y/Y Growth Cycle low 2 Private Payrolls Drive NFP Beat (With Caveats) After Major Revisions \u2022 Nonfarm payrolls growth was far stronger than expected in January at 130k (cons 65k) after negligible two-month revisions of -17k (mainly in Nov). \u2022 Private payrolls saw a larger beat, both with the 172k (68k cons) in January but with also a two-month revision of +49k (fairly evenly split over Dec and Nov). However, taking some of the gloss off, the Jan increase was led by a huge 124k rise from health & social assistance, a ",
+                  "score": 0.9255605
+                },
+                {
+                  "title": "Employment Situation Summary - 2026 M02 Results",
+                  "url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+                  "content": "tables B-2 and B-7.)\r\n\r\nThe change in total nonfarm payroll employment for November was revised down by 15,000, from\r\n+56,000 to +41,000, and the change for December was revised down by 2,000, from +50,000 to\r\n+48,000. With these revisions, employment in November and December combined is 17,000 lower\r\nthan previously reported. (Monthly revisions result from additional reports received from\r\nbusinesses and government agencies since the last published estimates and from the\r\nrecalculation of seasonal factors. The annual benchmark process also contributed to the\r\nNovember and December revisions.)",
+                  "score": 0.9094659
+                },
+                {
+                  "title": "Employment Situation News Release - 2025 M09 Results",
+                  "url": "https://www.bls.gov/news.release/empsit.htm",
+                  "content": "tables B-2 and B-7.)\r\n\r\nThe change in total nonfarm payroll employment for November was revised down by 15,000, from\r\n+56,000 to +41,000, and the change for December was revised down by 2,000, from +50,000 to\r\n+48,000. With these revisions, employment in November and December combined is 17,000 lower\r\nthan previously reported. (Monthly revisions result from additional reports received from\r\nbusinesses and government agencies since the last published estimates and from the\r\nrecalculation of seasonal factors. The annual benchmark process also contributed to the\r\nNovember and December revisions.)",
+                  "score": 0.9067276
+                },
+                {
+                  "title": "[PDF] Job Openings and Labor Turnover - December 2025 - BLS.gov",
+                  "url": "https://www.bls.gov/news.release/pdf/jolts.pdf",
+                  "content": "Hires. Hires include all additions to the payroll during the entire reference month, including newly hired and rehired employees; full-time and part-time employees; permanent, short-term, and seasonal employees; employees who were recalled to a job at the location following a layoff (formal suspension from pay status) lasting more than 7 days; on-call or intermittent employees who returned to work after having been formally separated; workers who were hired and separated during the month, and transfers from other locations. Excluded are transfers or promotions within the reporting location, em",
+                  "score": 0.7935067
+                }
+              ],
+              "search_queries": [
+                "BLS Employment Situation February 2026 revised December 2025 nonfarm payrolls",
+                "Bureau of Labor Statistics December 2025 payroll revision site:bls.gov"
+              ]
+            }
+          ],
+          "sentence_verdicts": {
+            "claude-opus-4-5-20251101": "not_supported",
+            "claude-sonnet-4-5-20250929": "not_supported",
+            "gemini-3-flash-preview": "error",
+            "gpt-5-chat-latest": "not_supported",
+            "grok-4-fast-non-reasoning": "not_supported"
+          }
+        },
+        {
+          "sentence_index": 14,
+          "sentence_text": "The pace of job turnover hit a nine-year low in January, at 5.8%, a recent ADP report found, as many workers .",
+          "claims": [
+            {
+              "claim": "The pace of job turnover hit 5.8% in January",
+              "category": "statistical",
+              "assessments": [
+                {
+                  "model_id": 199,
+                  "model_name": "claude-opus-4-5-20251101",
+                  "provider": "Anthropic",
+                  "verdict": "not_supported",
+                  "reasoning": "The web search results discuss labor market data from January 2026, not a historical January that would match the claim. Source 1 mentions that 'employee turnover in January 2026 hit its lowest level in nine years' but does not provide a specific 5.8% figure. None of the sources contain the specific 5.8% job turnover rate mentioned in the claim.",
+                  "sources": [
+                    "https://www.metaintro.com/blog/labor-market-dynamism-9-year-low-2026-adp-research",
+                    "https://mediacenter.adp.com/ADP-National-Employment-Report-Preliminary-Estimate-for-January-3,-2026",
+                    "https://adp-ri-nrip-static.adp.com/artifacts/us_ner/20260204/ADP_NATIONAL_EMPLOYMENT_REPORT_Press_Release_2026_01%20FINAL.pdf",
+                    "https://www.cnbc.com/2026/02/04/adp-jobs-report-january-2026.html"
+                  ],
+                  "note": "The search results appear to be from January 2026 and discuss turnover being at a 9-year low, but do not provide the specific 5.8% figure. The claim may refer to a different time period or source."
+                },
+                {
+                  "model_id": 168,
+                  "model_name": "claude-sonnet-4-5-20250929",
+                  "provider": "Anthropic",
+                  "verdict": "supported",
+                  "reasoning": "Source 1 explicitly states that 'employee turnover in January 2026 hit its lowest level in nine years' and describes the turnover rate. While Source 1 does not provide the exact 5.8% figure in the excerpt shown, it directly confirms that turnover data for January exists and was tracked by ADP Research. The claim's specific figure of 5.8% aligns with the context of turnover being discussed for January in the ADP analysis referenced in Source 1.",
+                  "sources": [
+                    "https://www.metaintro.com/blog/labor-market-dynamism-9-year-low-2026-adp-research"
+                  ],
+                  "note": "The search results confirm turnover data for January but the exact 5.8% figure is not explicitly stated in the provided excerpts, though the context strongly supports this being the referenced metric."
+                },
+                {
+                  "model_id": 200,
+                  "model_name": "gemini-3-flash-preview",
+                  "provider": "Google",
+                  "verdict": "error",
+                  "reasoning": "The read operation timed out",
+                  "sources": []
+                },
+                {
+                  "model_id": 172,
+                  "model_name": "gpt-5-chat-latest",
+                  "provider": "OpenAI",
+                  "verdict": "not_supported",
+                  "reasoning": "None of the provided sources mention a 5.8% job turnover rate in January. The available sources discuss overall job gains, pay growth, and general labor market conditions, but do not provide any turnover percentage or related statistic. Therefore, the claim about a 5.8% turnover rate is not supported by the evidence.",
+                  "sources": [
+                    "https://www.metaintro.com/blog/labor-market-dynamism-9-year-low-2026-adp-research",
+                    "https://mediacenter.adp.com/ADP-National-Employment-Report-Preliminary-Estimate-for-January-3,-2026",
+                    "https://adp-ri-nrip-static.adp.com/artifacts/us_ner/20260204/ADP_NATIONAL_EMPLOYMENT_REPORT_Press_Release_2026_01%20FINAL.pdf",
+                    "https://www.cnbc.com/2026/02/04/adp-jobs-report-january-2026.html"
+                  ]
+                },
+                {
+                  "model_id": 173,
+                  "model_name": "grok-4-fast-non-reasoning",
+                  "provider": "xAI",
+                  "verdict": "not_supported",
+                  "reasoning": "The claim refers to a job turnover rate of 5.8% in January, but the provided sources discuss job turnover and labor market conditions only for January 2026, not a prior January. Source 1 mentions employee turnover hitting a nine-year low in January 2026 but provides no specific rate like 5.8%. Sources 2 and 3 focus on job additions (e.g., 22,000 jobs in January 2026) without addressing turnover rates, and Source 4 similarly covers employment growth without relevant turnover data.",
+                  "sources": [
+                    "https://www.metaintro.com/blog/labor-market-dynamism-9-year-low-2026-adp-research",
+                    "https://mediacenter.adp.com/ADP-National-Employment-Report-Preliminary-Estimate-for-January-3,-2026",
+                    "https://adp-ri-nrip-static.adp.com/artifacts/us_ner/20260204/ADP_NATIONAL_EMPLOYMENT_REPORT_Press_Release_2026_01%20FINAL.pdf",
+                    "https://www.cnbc.com/2026/02/04/adp-jobs-report-january-2026.html"
+                  ],
+                  "note": "The search results appear to be from a future date (2026) and do not contain information relevant to a January prior to that year, suggesting the results may not align with the claim's timeframe."
+                }
+              ],
+              "source_hint": "ADP turnover report",
+              "web_sources": [
+                {
+                  "title": "What Happened to Labor Market Dynamism? ADP... - Metaintro",
+                  "url": "https://www.metaintro.com/blog/labor-market-dynamism-9-year-low-2026-adp-research",
+                  "content": "The American labor market has entered an era of unusual stillness. According to new analysis from ADP Research, employee turnover in January 2026 hit its lowest level in nine years, and the financial incentive for workers to change jobs has dropped to its weakest point since tracking began in 2017. Nela Richardson, Ph.D., ADP's chief economist, describes a market \"defined more by inactivity than vigor\" \u2014 a stark shift from the frenetic job-hopping and salary bidding wars of the Great Resignation just a few years ago. For millions of workers weighing whether to stay or go, the data paints a cle",
+                  "score": 0.8380581
+                },
+                {
+                  "title": "ADP National Employment Report Preliminary Estimate for January ...",
+                  "url": "https://mediacenter.adp.com/ADP-National-Employment-Report-Preliminary-Estimate-for-January-3,-2026",
+                  "content": "ADP logo\n\n# Workforce Newsroom\n\nROSELAND, N.J. \u2013 January 27, 2026 \u2013 For the four weeks ending January 3, 2026, U.S. private employers added an average of 7,750 jobs per week, according to the NER Pulse, a weekly update of the monthly ADP National Employment Report (NER).\n\nJob gains edged down for a third straight week. These numbers are preliminary and could change as new data is added.\n\n|  |  |\n --- |\n| Week ending | Change  (Four-week moving  average, seasonally  adjusted) |\n| 1/3/2026 | 7,750 |\n| 12/27/2025 | 8,000 |\n| 12/20/2025 | 11,250 |\n| 12/13/2025 | 10,250 |\n| 12/6/2025 | 8,750 |\n| 11",
+                  "score": 0.7892503
+                },
+                {
+                  "title": "[PDF] Private Sector Employment Increased by 22000 Jobs in January - ADP",
+                  "url": "https://adp-ri-nrip-static.adp.com/artifacts/us_ner/20260204/ADP_NATIONAL_EMPLOYMENT_REPORT_Press_Release_2026_01%20FINAL.pdf",
+                  "content": "ADP National Employment Report: Private Sector Employment Increased by 22,000 Jobs in January; Annual Pay was Up 4.5% ROSELAND, N.J. \u2013 February 4, 2026 \u2013 Private sector employment increased by 22,000 jobs in January and pay was up 4.5 percent year-over-year according to the January ADP National Employment Report\u00ae produced by ADP Research in collaboration with the Stanford Digital Economy Lab (\u201cStanford Lab\u201d). The ADP National Employment Report is an independent measure of the labor market based on the anonymized weekly payroll data of more than 26 million private-sector employees in the United",
+                  "score": 0.7608822
+                },
+                {
+                  "title": "ADP jobs report January 2026: - CNBC",
+                  "url": "https://www.cnbc.com/2026/02/04/adp-jobs-report-january-2026.html",
+                  "content": "Private companies added just 22,000 positions for the month and the number would have been negative had it not been for a surge of 74,000 hires in the education and health services category. The total was less than the downwardly revised 37,000 increase in December and below the Dow Jones consensus forecast for 45,000.\n\nThe report starts 2026 off on basically the same note where 2025 ended: A lackluster job market in a low-hire, low-fire environment that likely will do little to quell fears from Federal Reserve policymakers that more support may be needed.\n\n\"Hiring is softening. It continues a",
+                  "score": 0.7286136
+                }
+              ],
+              "search_queries": [
+                "ADP Research Institute workforce vitality report January 2026 turnover rate",
+                "ADP turnover rate January 2026 site:adp.com"
+              ]
+            },
+            {
+              "claim": "The pace of job turnover hit a nine-year low in January",
+              "category": "historical",
+              "assessments": [
+                {
+                  "model_id": 199,
+                  "model_name": "claude-opus-4-5-20251101",
+                  "provider": "Anthropic",
+                  "verdict": "supported",
+                  "reasoning": "Source 1 directly confirms that according to ADP Research, employee turnover in January 2026 hit its lowest level in nine years. This matches the claim that the pace of job turnover hit a nine-year low in January.",
+                  "sources": [
+                    "https://www.metaintro.com/blog/labor-market-dynamism-9-year-low-2026-adp-research"
+                  ]
+                },
+                {
+                  "model_id": 168,
+                  "model_name": "claude-sonnet-4-5-20250929",
+                  "provider": "Anthropic",
+                  "verdict": "supported",
+                  "reasoning": "Source 1 directly confirms that \"employee turnover in January 2026 hit its lowest level in nine years\" according to ADP Research analysis. This statement from ADP's chief economist explicitly supports the claim that the pace of job turnover hit a nine-year low in January. The claim is substantively confirmed by the primary source.",
+                  "sources": [
+                    "https://www.metaintro.com/blog/labor-market-dynamism-9-year-low-2026-adp-research"
+                  ]
+                },
+                {
+                  "model_id": 200,
+                  "model_name": "gemini-3-flash-preview",
+                  "provider": "Google",
+                  "verdict": "error",
+                  "reasoning": "Client error '429 Too Many Requests' for url 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=REDACTED'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+                  "sources": []
+                },
+                {
+                  "model_id": 172,
+                  "model_name": "gpt-5-chat-latest",
+                  "provider": "OpenAI",
+                  "verdict": "supported",
+                  "reasoning": "Source [1] explicitly states that according to ADP Research, employee turnover in January 2026 hit its lowest level in nine years. This directly supports the claim that the pace of job turnover reached a nine-year low in January. Other sources provide general employment data but do not contradict this finding.",
+                  "sources": [
+                    "https://www.metaintro.com/blog/labor-market-dynamism-9-year-low-2026-adp-research"
+                  ]
+                },
+                {
+                  "model_id": 173,
+                  "model_name": "grok-4-fast-non-reasoning",
+                  "provider": "xAI",
+                  "verdict": "supported",
+                  "reasoning": "Source 1 directly confirms that employee turnover in January 2026 hit its lowest level in nine years, aligning with the claim about the pace of job turnover reaching a nine-year low in January. Sources 4 and 5 provide context on the January 2026 employment report, showing a slowdown in job creation, which supports the broader labor market dynamism trend described in Source 1. The claim's core assertion is verified by the ADP Research analysis, even though the exact month is January 2026 rather than a prior year, but it fits the historical category as a recent low point.",
+                  "sources": [
+                    "https://www.metaintro.com/blog/labor-market-dynamism-9-year-low-2026-adp-research",
+                    "https://www.adp.com/media/press-releases/2013-press-releases/adp-national-employment-report-for-july-2013.aspx",
+                    "https://adp-ri-nrip-static.adp.com/artifacts/us_ner/20260204/ADP_NATIONAL_EMPLOYMENT_REPORT_Press_Release_2026_01%20FINAL.pdf"
+                  ],
+                  "note": "The sources reference January 2026, indicating the claim pertains to that future or hypothetical date; however, per guidelines, this is treated as supported if accurate at that point."
+                }
+              ],
+              "source_hint": "ADP turnover report",
+              "web_sources": [
+                {
+                  "title": "What Happened to Labor Market Dynamism? ADP... - Metaintro",
+                  "url": "https://www.metaintro.com/blog/labor-market-dynamism-9-year-low-2026-adp-research",
+                  "content": "The American labor market has entered an era of unusual stillness. According to new analysis from ADP Research, employee turnover in January 2026 hit its lowest level in nine years, and the financial incentive for workers to change jobs has dropped to its weakest point since tracking began in 2017. Nela Richardson, Ph.D., ADP's chief economist, describes a market \"defined more by inactivity than vigor\" \u2014 a stark shift from the frenetic job-hopping and salary bidding wars of the Great Resignation just a few years ago. For millions of workers weighing whether to stay or go, the data paints a cle",
+                  "score": 0.8380581
+                },
+                {
+                  "title": "ADP National Employment Report",
+                  "url": "https://mediacenter.adp.com/2026-01-07-ADP-National-Employment-Report-Private-Sector-Employment-Increased-by-41,000-Jobs-in-December-Annual-Pay-was-Up-4-4",
+                  "content": "ADP logo\n\n# Workforce Newsroom\n\nDownload PDF Download PDF\n\nROSELAND, N.J., Jan. 7, 2026 /PRNewswire/ -- Private sector employment increased by 41,000 jobs in December and pay was up 4.4 percent year-over-year according to the December ADP National Employment Report\u00ae produced by ADP Research in collaboration with the Stanford Digital Economy Lab (\"Stanford Lab\").",
+                  "score": 0.8014549
+                },
+                {
+                  "title": "ADP National Employment Report Preliminary Estimate for January ...",
+                  "url": "https://mediacenter.adp.com/ADP-National-Employment-Report-Preliminary-Estimate-for-January-3,-2026",
+                  "content": "ADP logo\n\n# Workforce Newsroom\n\nROSELAND, N.J. \u2013 January 27, 2026 \u2013 For the four weeks ending January 3, 2026, U.S. private employers added an average of 7,750 jobs per week, according to the NER Pulse, a weekly update of the monthly ADP National Employment Report (NER).\n\nJob gains edged down for a third straight week. These numbers are preliminary and could change as new data is added.\n\n|  |  |\n --- |\n| Week ending | Change  (Four-week moving  average, seasonally  adjusted) |\n| 1/3/2026 | 7,750 |\n| 12/27/2025 | 8,000 |\n| 12/20/2025 | 11,250 |\n| 12/13/2025 | 10,250 |\n| 12/6/2025 | 8,750 |\n| 11",
+                  "score": 0.7892503
+                },
+                {
+                  "title": "ADP\u00ae Employment Report",
+                  "url": "https://www.adp.com/media/press-releases/2013-press-releases/adp-national-employment-report-for-july-2013.aspx",
+                  "content": "# ADP\u00ae National Employment Report\n\nIn collaboration with Stanford Digital Economy Lab\n\nup 22,000\n\nJanuary 2026 Change in U.S. private employment\n\n## Private employers added 22,000 jobs in January\n\n In a lackluster month for hiring, health care was a standout, adding 74,000 jobs. Leading the slowdown was manufacturing, which has lost jobs every month since March 2024, professional and business services, and large employers.\n\nJob creation took a step back in 2025, with private employers adding 398,000 jobs, down from 771,000 in 2024. While we've seen a continuous and dramatic slowdown in job cre",
+                  "score": 0.78709817
+                },
+                {
+                  "title": "[PDF] Private Sector Employment Increased by 22000 Jobs in January - ADP",
+                  "url": "https://adp-ri-nrip-static.adp.com/artifacts/us_ner/20260204/ADP_NATIONAL_EMPLOYMENT_REPORT_Press_Release_2026_01%20FINAL.pdf",
+                  "content": "ADP National Employment Report: Private Sector Employment Increased by 22,000 Jobs in January; Annual Pay was Up 4.5% ROSELAND, N.J. \u2013 February 4, 2026 \u2013 Private sector employment increased by 22,000 jobs in January and pay was up 4.5 percent year-over-year according to the January ADP National Employment Report\u00ae produced by ADP Research in collaboration with the Stanford Digital Economy Lab (\u201cStanford Lab\u201d). The ADP National Employment Report is an independent measure of the labor market based on the anonymized weekly payroll data of more than 26 million private-sector employees in the United",
+                  "score": 0.7608822
+                }
+              ],
+              "search_queries": [
+                "ADP Research Institute workforce vitality report January 2026 turnover rate",
+                "ADP turnover rate data January 2026 site:adp.com"
+              ]
+            }
+          ],
+          "sentence_verdicts": {
+            "claude-opus-4-5-20251101": "not_supported",
+            "claude-sonnet-4-5-20250929": "supported",
+            "gemini-3-flash-preview": "error",
+            "gpt-5-chat-latest": "not_supported",
+            "grok-4-fast-non-reasoning": "not_supported"
+          }
+        },
+        {
+          "sentence_index": 15,
+          "sentence_text": "The lackluster hiring was also evident last year, when employers added a total of 181,000 jobs, the lowest since the pandemic year of 2020.",
+          "claims": [
+            {
+              "claim": "Employers added a total of 181,000 jobs in 2023",
+              "category": "statistical",
+              "assessments": [
+                {
+                  "model_id": 199,
+                  "model_name": "claude-opus-4-5-20251101",
+                  "provider": "Anthropic",
+                  "verdict": "not_supported",
+                  "reasoning": "The web search results provide monthly job gains data for specific months in 2023 (e.g., 150,000 in October [Source 1], 236,000 in March [Source 3]), but none of the sources provide a total annual figure for 2023. The claim of 181,000 total jobs added in 2023 appears implausibly low given that individual months showed gains of 150,000-236,000, suggesting either the claim is incorrect or refers to a specific sector/region not specified. The sources do not contain information that confirms or directly addresses this specific annual total.",
+                  "sources": [
+                    "https://www.bls.gov/opub/ted/2023/nonfarm-payroll-employment-up-150000-in-october-2023.htm",
+                    "https://www.bls.gov/news.release/archives/empsit_04072023.htm"
+                  ],
+                  "note": "The claim of 181,000 total jobs for all of 2023 appears inconsistent with BLS data showing monthly gains of 150,000-258,000. The claim may refer to a specific sector, region, or may contain an error."
+                },
+                {
+                  "model_id": 168,
+                  "model_name": "claude-sonnet-4-5-20250929",
+                  "provider": "Anthropic",
+                  "verdict": "not_supported",
+                  "reasoning": "The claim states that employers added a total of 181,000 jobs in 2023, which would represent the entire year's job growth. However, the sources show much higher monthly job gains throughout 2023. For example, [Source 1] reports 150,000 jobs added in October 2023 alone, [Source 3] shows 236,000 jobs added in March 2023, and [Source 1] mentions an average monthly gain of 258,000 over the prior 12 months from October. These figures indicate that 181,000 jobs for the entire year of 2023 is far too low and contradicts the available data showing individual months with higher job gains than this annual figure.",
+                  "sources": [
+                    "https://www.bls.gov/opub/ted/2023/nonfarm-payroll-employment-up-150000-in-october-2023.htm",
+                    "https://www.bls.gov/news.release/archives/empsit_04072023.htm"
+                  ]
+                },
+                {
+                  "model_id": 200,
+                  "model_name": "gemini-3-flash-preview",
+                  "provider": "Google",
+                  "verdict": "error",
+                  "reasoning": "Client error '429 Too Many Requests' for url 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=REDACTED'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+                  "sources": []
+                },
+                {
+                  "model_id": 172,
+                  "model_name": "gpt-5-chat-latest",
+                  "provider": "OpenAI",
+                  "verdict": "not_supported",
+                  "reasoning": "None of the provided sources mention the total number of jobs added in 2023. The BLS releases cited ([Source 1], [Source 3], [Source 4], [Source 5]) report monthly job gains for specific months (e.g., 150,000 in October, 236,000 in March) but do not provide an annual total. Therefore, there is no evidence in these sources confirming that employers added a total of 181,000 jobs in 2023.",
+                  "sources": [
+                    "https://www.bls.gov/opub/ted/2023/nonfarm-payroll-employment-up-150000-in-october-2023.htm",
+                    "https://www.bls.gov/news.release/archives/empsit_04072023.htm",
+                    "https://www.bls.gov/news.release/archives/empsit_10062023.htm",
+                    "https://www.bls.gov/news.release/archives/empsit_02032023.htm"
+                  ]
+                },
+                {
+                  "model_id": 173,
+                  "model_name": "grok-4-fast-non-reasoning",
+                  "provider": "xAI",
+                  "verdict": "not_supported",
+                  "reasoning": "The provided web search results contain monthly employment data from the BLS for specific months in 2023 (e.g., +150,000 in October [Source 1], +236,000 in March [Source 3]), but none aggregate or report the total nonfarm payroll job additions for the entire year of 2023. Without a source confirming the annual total of 181,000 jobs, the claim cannot be verified or supported by these results. The sources are relevant to employment statistics but lack the comprehensive yearly figure needed.",
+                  "sources": [
+                    "https://www.bls.gov/opub/ted/2023/nonfarm-payroll-employment-up-150000-in-october-2023.htm",
+                    "https://www.bls.gov/news.release/archives/empsit_04072023.htm",
+                    "https://www.bls.gov/news.release/archives/empsit_10062023.htm",
+                    "https://www.bls.gov/news.release/archives/empsit_02032023.htm"
+                  ]
+                }
+              ],
+              "source_hint": "Labor Department employment report",
+              "web_sources": [
+                {
+                  "title": "Nonfarm payroll employment up 150000 in October 2023 - BLS.gov",
+                  "url": "https://www.bls.gov/opub/ted/2023/nonfarm-payroll-employment-up-150000-in-october-2023.htm",
+                  "content": "Nonfarm payroll employment up 150,000 in October 2023\n\nNovember 15, 2023\nTotal nonfarm payroll employment increased by 150,000 in October 2023, below the average monthly gain of 258,000 over the prior 12 months. Job gains occurred in health care, social assistance, and government while employment in manufacturing declined.\n\n   Chart Image\n   Chart Data [...] Within private education and health services, health care added 58,000 jobs in October 2023, in line with its average monthly gain of 53,000 over the prior 12 months. Over the month, employment continued to trend up in ambulatory health ca",
+                  "score": 0.9467988
+                },
+                {
+                  "title": "[PDF] The Employment Situation - December 2023",
+                  "url": "https://www.dol.gov/newsroom/economicdata/empsit_01052024.pdf",
+                  "content": "sample survey of about 60,000 eligible households conducted by the U.S. Census Bureau for the U.S. Bureau of Labor Statistics (BLS). The establishment survey provides information on employment, hours, and earnings of employees on nonfarm payrolls; the data appear in the \"B\" tables, marked ESTABLISHMENT DATA. BLS collects these data each month from the payroll records of a sample of nonagricultural business establishments. Each month the CES program surveys about 122,000 businesses and government agencies, representing approximately 666,000 individual worksites, in order to provide detailed ind",
+                  "score": 0.9274752
+                },
+                {
+                  "title": "Employment Situation News Release - 2023 M03 Results",
+                  "url": "https://www.bls.gov/news.release/archives/empsit_04072023.htm",
+                  "content": "Establishment Survey Data\n\nTotal nonfarm payroll employment increased by 236,000 in March, compared with the\naverage monthly gain of 334,000 over the prior 6 months. In March, employment \ncontinued to trend up in leisure and hospitality, government, professional and\nbusiness services, and health care. (See table B-1.) \n\nLeisure and hospitality added 72,000 jobs in March, lower than the average monthly\ngain of 95,000 over the prior 6 months. Most of the job growth occurred in food\nservices and drinking places, where employment rose by 50,000 in March. Employment\nin leisure and hospitality is be",
+                  "score": 0.92125154
+                },
+                {
+                  "title": "Employment Situation News Release - 2023 M09 Results",
+                  "url": "https://www.bls.gov/news.release/archives/empsit_10062023.htm",
+                  "content": "|  |\n| Men, 16 to 64 years |  |\n| Civilian labor force | 3,126 | 3,543 | 78,109 | 79,399 |\n| Participation rate | 37.9 | 41.9 | 82.7 | 83.0 |\n| Employed | 2,868 | 3,278 | 75,652 | 76,409 |\n| Employment-population ratio | 34.8 | 38.7 | 80.1 | 79.9 |\n| Unemployed | 259 | 265 | 2,457 | 2,991 |\n| Unemployment rate | 8.3 | 7.5 | 3.1 | 3.8 |\n| Not in labor force | 5,124 | 4,916 | 16,395 | 16,260 |\n|  |\n| Women, 16 to 64 years |  |\n| Civilian labor force | 3,243 | 3,313 | 68,733 | 70,044 |\n| Participation rate | 38.2 | 38.8 | 71.6 | 72.9 |\n| Employed | 2,974 | 3,045 | 66,506 | 67,809 |\n| Employment-p",
+                  "score": 0.8679453
+                },
+                {
+                  "title": "Employment Situation News Release - 2023 M01 Results",
+                  "url": "https://www.bls.gov/news.release/archives/empsit_02032023.htm",
+                  "content": "|  |\n| Men, 16 to 64 years |  |\n| Civilian labor force | 3,160 | 3,206 | 77,363 | 78,534 |\n| Participation rate | 39.4 | 40.5 | 81.6 | 81.8 |\n| Employed | 2,799 | 2,970 | 73,847 | 75,225 |\n| Employment-population ratio | 34.9 | 37.5 | 77.9 | 78.3 |\n| Unemployed | 361 | 236 | 3,517 | 3,309 |\n| Unemployment rate | 11.4 | 7.4 | 4.5 | 4.2 |\n| Not in labor force | 4,869 | 4,716 | 17,444 | 17,513 |\n|  |\n| Women, 16 to 64 years |  |\n| Civilian labor force | 2,865 | 3,212 | 68,788 | 69,128 |\n| Participation rate | 35.6 | 38.8 | 71.3 | 71.9 |\n| Employed | 2,640 | 2,969 | 66,059 | 66,863 |\n| Employment-",
+                  "score": 0.86767644
+                }
+              ],
+              "search_queries": [
+                "Bureau of Labor Statistics Employment Situation annual jobs added 2023 site:bls.gov",
+                "BLS total nonfarm payroll employment 2023 Employment Situation report"
+              ]
+            },
+            {
+              "claim": "181,000 jobs added in 2023 was the lowest since 2020",
+              "category": "historical",
+              "assessments": [
+                {
+                  "model_id": 199,
+                  "model_name": "claude-opus-4-5-20251101",
+                  "provider": "Anthropic",
+                  "verdict": "not_supported",
+                  "reasoning": "The claim states that 181,000 jobs were added in 2023, but according to Source 4 (BLS), nonfarm payroll employment expanded by 3 million in 2023, with average monthly job gains of 251,000. The sources do not support the figure of 181,000 total jobs added in 2023, nor do they provide information about this being the lowest since 2020. The claim appears to conflate a single month's figure with annual totals or contains an error.",
+                  "sources": [
+                    "https://www.bls.gov/opub/mlr/2024/article/employment-continues-to-expand-in-2023-though-at-a-slower-pace-than-in-the-previous-2-years.htm"
+                  ],
+                  "note": "The 181,000 figure may refer to a specific month's job gains (such as a revised figure for a particular month in 2023), not the annual total. BLS data shows 3 million jobs were added in 2023 overall."
+                },
+                {
+                  "model_id": 168,
+                  "model_name": "claude-sonnet-4-5-20250929",
+                  "provider": "Anthropic",
+                  "verdict": "not_supported",
+                  "reasoning": "The claim states that 181,000 jobs were added in 2023, but this is contradicted by [Source 4], which explicitly states that nonfarm payroll employment expanded by 3 million in 2023, with average monthly job gains of 251,000. The sources provide no evidence supporting a figure of 181,000 total jobs added for the year 2023. The claim appears to confuse a single month's job gains with the annual total.",
+                  "sources": [
+                    "https://www.bls.gov/opub/mlr/2024/article/employment-continues-to-expand-in-2023-though-at-a-slower-pace-than-in-the-previous-2-years.htm"
+                  ]
+                },
+                {
+                  "model_id": 200,
+                  "model_name": "gemini-3-flash-preview",
+                  "provider": "Google",
+                  "verdict": "error",
+                  "reasoning": "Client error '429 Too Many Requests' for url 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=REDACTED'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+                  "sources": []
+                },
+                {
+                  "model_id": 172,
+                  "model_name": "gpt-5-chat-latest",
+                  "provider": "OpenAI",
+                  "verdict": "not_supported",
+                  "reasoning": "The claim that 181,000 jobs were added in 2023 and that this was the lowest since 2020 is not supported by the sources. According to the Bureau of Labor Statistics, total nonfarm payroll employment expanded by about 3 million in 2023, with an average monthly gain of 251,000 jobs [Source 4]. This figure is far higher than 181,000 and, while slower than 2021 and 2022, it is not described as the lowest since 2020.",
+                  "sources": [
+                    "https://www.bls.gov/opub/mlr/2024/article/employment-continues-to-expand-in-2023-though-at-a-slower-pace-than-in-the-previous-2-years.htm"
+                  ]
+                },
+                {
+                  "model_id": 173,
+                  "model_name": "grok-4-fast-non-reasoning",
+                  "provider": "xAI",
+                  "verdict": "not_supported",
+                  "reasoning": "The claim states that 181,000 jobs were added in 2023, but [Source 4] directly contradicts this by reporting 3 million jobs added in 2023, with an average monthly gain of 251,000. No sources mention 181,000 as the total for 2023; instead, they provide monthly figures like 517,000 in January [Source 1], 150,000 in October [Source 2], and 216,000 in December [Source 3], which align with the higher annual total. The claim's assertion of this being the lowest since 2020 cannot be evaluated due to the incorrect total, and sources show 2023 growth was slower than 2021 and 2022 but still substantial.",
+                  "sources": [
+                    "https://www.bls.gov/opub/mlr/2024/article/employment-continues-to-expand-in-2023-though-at-a-slower-pace-than-in-the-previous-2-years.htm",
+                    "https://www.bls.gov/opub/ted/2023/nonfarm-payroll-employment-rose-by-517000-in-january-2023.htm",
+                    "https://www.bls.gov/opub/ted/2023/nonfarm-payroll-employment-up-150000-in-october-2023.htm",
+                    "https://www.bls.gov/opub/ted/2024/payroll-employment-up-by-216000-in-december-2023.htm"
+                  ]
+                }
+              ],
+              "source_hint": "Labor Department employment report",
+              "web_sources": [
+                {
+                  "title": "Nonfarm payroll employment rose by 517000 in January 2023",
+                  "url": "https://www.bls.gov/opub/ted/2023/nonfarm-payroll-employment-rose-by-517000-in-january-2023.htm",
+                  "content": "Nonfarm payroll employment rose by 517,000 in January 2023\n\nFebruary 08, 2023\nNonfarm payroll employment rose by 517,000 in January 2023. Job growth was widespread in January, led by gains in leisure and hospitality (+128,000), professional and business services (+82,000), and health care (+58,000). Employment also increased in government, partially reflecting the return of university workers from a strike.\n\n   Chart Image\n   Chart Data [...] Within leisure and hospitality, employment in food services and drinking places rose by 99,000 in January 2023, while employment in accommodation continu",
+                  "score": 0.93468803
+                },
+                {
+                  "title": "Nonfarm payroll employment up 150000 in October 2023 - BLS.gov",
+                  "url": "https://www.bls.gov/opub/ted/2023/nonfarm-payroll-employment-up-150000-in-october-2023.htm",
+                  "content": "Nonfarm payroll employment up 150,000 in October 2023\n\nNovember 15, 2023\nTotal nonfarm payroll employment increased by 150,000 in October 2023, below the average monthly gain of 258,000 over the prior 12 months. Job gains occurred in health care, social assistance, and government while employment in manufacturing declined.\n\n   Chart Image\n   Chart Data [...] Within private education and health services, health care added 58,000 jobs in October 2023, in line with its average monthly gain of 53,000 over the prior 12 months. Over the month, employment continued to trend up in ambulatory health ca",
+                  "score": 0.9147261
+                },
+                {
+                  "title": "Payroll employment up by 216000 in December 2023 - BLS.gov",
+                  "url": "https://www.bls.gov/opub/ted/2024/payroll-employment-up-by-216000-in-december-2023.htm",
+                  "content": "Government employment increased by 52,000 in December 2023 to 23 million. Employment continued to trend up in local government (+37,000) and federal government (+7,000). Government added an average of 56,000 jobs per month in 2023, more than double the average monthly gain of 23,000 in 2022.\n\nIn December, construction employment continued to trend up (+17,000). Construction added an average of 16,000 jobs per month in 2023, little different than the 2022 average monthly gain of 22,000.\n\nEmployment in leisure and hospitality changed little in December (+40,000). The industry added an average of",
+                  "score": 0.903098
+                },
+                {
+                  "title": "Employment continues to expand in 2023, though at a slower pace ...",
+                  "url": "https://www.bls.gov/opub/mlr/2024/article/employment-continues-to-expand-in-2023-though-at-a-slower-pace-than-in-the-previous-2-years.htm",
+                  "content": "According to data from the U.S. Bureau of Labor Statistics (BLS) Current Employment Statistics (CES) survey, nonfarm payroll employment expanded by 3 million in 2023.1 (See chart 1.) Average monthly job gains of 251,000 in 2023 were down from those in 2022 (+377,000) and 2021 (+604,000). In percentage terms, employment rose by 2.0 percent in 2023, lower than in each of the prior 2 years but higher than each of the 5 years prior to the pandemic. Despite this slowdown in employment growth, real gross domestic product accelerated from 0.7 percent in 2022 to 3.1 in 2023.2 (See table 1.)\n\nChart 1. ",
+                  "score": 0.8961153
+                },
+                {
+                  "title": "Employment Situation News Release - 2023 M01 Results - BLS.gov",
+                  "url": "https://www.bls.gov/news.release/archives/empsit_02032023.htm",
+                  "content": "The change in total nonfarm payroll employment for November was revised up by 34,000,\nfrom +256,000 to +290,000, and the change for December was revised up by 37,000, from\n+223,000 to +260,000. With these revisions, employment gains in November and December\ncombined were 71,000 higher than previously reported. (Monthly revisions result from\nadditional reports received from businesses and government agencies since the last \npublished estimates and from the recalculation of seasonal factors. The annual \nbenchmark process also contributed to the November and December revisions.)\n\n_____________\nTh",
+                  "score": 0.8923472
+                }
+              ],
+              "search_queries": [
+                "BLS Employment Situation annual job gains 2023 site:bls.gov",
+                "Bureau of Labor Statistics nonfarm payroll employment 2020 2023 comparison site:bls.gov"
+              ]
+            }
+          ],
+          "sentence_verdicts": {
+            "claude-opus-4-5-20251101": "not_supported",
+            "claude-sonnet-4-5-20250929": "not_supported",
+            "gemini-3-flash-preview": "error",
+            "gpt-5-chat-latest": "not_supported",
+            "grok-4-fast-non-reasoning": "not_supported"
+          }
+        },
+        {
+          "sentence_index": 20,
+          "sentence_text": "\"The key question now is whether February was a temporary setback or the start of a more concerning trend.\"\nThe Fed's next rate decision will be announced on March 18.",
+          "claims": [
+            {
+              "claim": "The Fed's next rate decision will be announced on March 18",
+              "category": "procedural",
+              "assessments": [
+                {
+                  "model_id": 199,
+                  "model_name": "claude-opus-4-5-20251101",
+                  "provider": "Anthropic",
+                  "verdict": "not_supported",
+                  "reasoning": "The web search results contain Federal Reserve calendar information for 2026, not 2025. Source 4 shows the March 2026 calendar but does not include any FOMC meeting scheduled for March 18. The sources do not provide any information about a March 18 rate decision announcement, and the search results appear to be from a different time period than the claim references.",
+                  "sources": [
+                    "https://www.federalreserve.gov/newsevents/2026-march.htm"
+                  ],
+                  "note": "Search results returned 2026 Federal Reserve calendars rather than information relevant to the claim's timeframe. The March 2026 calendar shown does not list an FOMC meeting on March 18."
+                },
+                {
+                  "model_id": 168,
+                  "model_name": "claude-sonnet-4-5-20250929",
+                  "provider": "Anthropic",
+                  "verdict": "not_supported",
+                  "reasoning": "The web search results provided are all from 2026 calendars and meetings (Sources 1-5 all reference dates in 2026, including January 27-28, 2026 and September 2026 FOMC meetings). None of the sources contain information about a March 18 Fed rate decision or any FOMC meeting scheduled for March 18. Source 4 shows the March 2026 calendar but only lists speeches, not an FOMC meeting on March 18.",
+                  "sources": [
+                    "https://www.federalreserve.gov/newsevents/2026-march.htm",
+                    "https://www.federalreserve.gov/newsevents/2026-january.htm",
+                    "https://www.federalreserve.gov/newsevents/2026-september.htm"
+                  ]
+                },
+                {
+                  "model_id": 200,
+                  "model_name": "gemini-3-flash-preview",
+                  "provider": "Google",
+                  "verdict": "error",
+                  "reasoning": "Client error '429 Too Many Requests' for url 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=REDACTED'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+                  "sources": []
+                },
+                {
+                  "model_id": 172,
+                  "model_name": "gpt-5-chat-latest",
+                  "provider": "OpenAI",
+                  "verdict": "not_supported",
+                  "reasoning": "None of the provided Federal Reserve sources mention an FOMC meeting or rate decision scheduled for March 18. The available calendars show meetings in January and September 2026, but the March 2026 calendar does not list any FOMC meeting or rate announcement. Therefore, there is no evidence supporting that the Fed\u2019s next rate decision will be announced on March 18.",
+                  "sources": [
+                    "https://www.federalreserve.gov/newsevents/2026-january.htm",
+                    "https://www.federalreserve.gov/newsevents/2026-march.htm",
+                    "https://www.federalreserve.gov/newsevents/2026-september.htm"
+                  ]
+                },
+                {
+                  "model_id": 173,
+                  "model_name": "grok-4-fast-non-reasoning",
+                  "provider": "xAI",
+                  "verdict": "not_supported",
+                  "reasoning": "The provided web search results contain no information about any FOMC meeting or rate decision announcement in March 2026, with Source 4 only listing speeches and discussions for that month but no FOMC events. Sources 1, 2, 3, and 5 detail FOMC meetings in September 2026 and January 2026, respectively, but nothing for March. The sources are relevant to Federal Reserve calendars and meetings but do not confirm or contradict the specific claim about a March 18 announcement, resulting in no supporting evidence.",
+                  "sources": [
+                    "https://www.federalreserve.gov/newsevents/2026-march.htm",
+                    "https://www.federalreserve.gov/newsevents/2026-september.htm",
+                    "https://www.federalreserve.gov/newsevents/2026-january.htm",
+                    "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260128.htm",
+                    "https://www.federalreserve.gov/monetarypolicy/fomcpressconf20260128.htm"
+                  ],
+                  "note": "The search results appear to be from a future or hypothetical 2026 calendar; in reality, as of 2023-2024, FOMC meetings are scheduled quarterly, with a March meeting typically occurring, but the sources provided do not address March 2026 specifically."
+                }
+              ],
+              "source_hint": "Federal Reserve schedule",
+              "web_sources": [
+                {
+                  "title": "Calendar: September 2026 - Federal Reserve Board",
+                  "url": "https://www.federalreserve.gov/newsevents/2026-september.htm",
+                  "content": "Money Stock and Reserve Balances\n\nOther\n\nRegulations\n\nSupervision & Enforcement\n\nCommunity Development\n\nResearch & Analysis\n\nResources for Consumers\n\n## Calendar\n\n#### September 2026\n\n#### FOMC Meetings\n\n###### Time:\n\n###### Release Date(s):\n\n2:30 p.m.\n\nFOMC Press Conference\n\n16\n\n2:00 p.m.\n\nFOMC Meeting\n\nTwo-day meeting, September 15 - 16\n\nPress Conference\n\nTwo-day meeting, September 15 - 16\n\nPress Conference\n\n16\n\n#### Beige Book\n\n###### Time:\n\n###### Release Date(s):\n\n2:00 p.m.\n\nBeige Book\n\n2\n\n#### Statistical Releases\n\n###### Time:\n\n###### Release Date(s):\n\n2:00 p.m.\n\nSenior Credit Officer O",
+                  "score": 0.9551898
+                },
+                {
+                  "title": "Calendar: January 2026 - Federal Reserve Board",
+                  "url": "https://www.federalreserve.gov/newsevents/2026-january.htm",
+                  "content": "Other\n\nRegulations\n\nSupervision & Enforcement\n\nCommunity Development\n\nResearch & Analysis\n\nResources for Consumers\n\n## Calendar\n\n#### January 2026\n\n#### Announcements\n\n###### Date:\n\nFederal government offices in Washington, D.C., are closed Tuesday, January 27, due to inclement weather.  \nThe Federal Reserve Board plans to issue all releases as scheduled, including statistical publications.\n\nThe Federal Open Market Committee will meet as planned on Tuesday, January 27 and Wednesday, January 28. The FOMC statement will be released as scheduled at 2 p.m. EST, and the Chair's news conference will",
+                  "score": 0.9317675
+                },
+                {
+                  "title": "The Fed - Monetary Policy: - Federal Reserve",
+                  "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260128.htm",
+                  "content": "Frauds and Scams\n           Mortgage and Foreclosure Resources\n           Federal Reserve Community Development Resources\n\n1.   Home\n2.   Monetary Policy\n3.   Federal Open Market Committee\n\nFederal Open Market Committee\n\nPDF\n\nFOMC Minutes\n\n### Minutes of the Federal Open Market Committee\n\nJanuary 27\u201328, 2026\n\n A joint meeting of the Federal Open Market Committee and the Board of Governors of the Federal Reserve System was held in the offices of the Board of Governors on Tuesday, January 27, 2026, at 10:00 a.m. and continued on Wednesday, January 28, 2026, at 9:00 a.m.1.",
+                  "score": 0.9197076
+                },
+                {
+                  "title": "Calendar: March 2026 - Federal Reserve Board",
+                  "url": "https://www.federalreserve.gov/newsevents/2026-march.htm",
+                  "content": "Money Stock and Reserve Balances\n\nOther\n\nRegulations\n\nSupervision & Enforcement\n\nCommunity Development\n\nResearch & Analysis\n\nResources for Consumers\n\n## Calendar\n\n#### March 2026\n\n#### Speeches\n\n###### Time:\n\n###### Release Date(s):\n\n11:00 a.m.\n\nSpeech - Vice Chair for Supervision Michelle W. Bowman\n\nWatch Live\n\nBasel III and Bank Capital Rules\n\nAt a Conversation with Vice Chair for Supervision Bowman, Washington, D.C.\n\n12\n\n8:30 a.m.\n\nDiscussion - Vice Chair for Supervision Michelle W. Bowman\n\nWatch Live\n\nSupervision and Regulation\n\nAt the American Bankers Association Washington Summit, Washin",
+                  "score": 0.9183121
+                },
+                {
+                  "title": "The Fed - January 27-28, 2026 FOMC Meeting - Federal Reserve",
+                  "url": "https://www.federalreserve.gov/monetarypolicy/fomcpressconf20260128.htm",
+                  "content": "Money Stock and Reserve Balances\n\nOther\n\nRegulations\n\nSupervision & Enforcement\n\nCommunity Development\n\nResearch & Analysis\n\nResources for Consumers\n\n## Federal Open Market Committee\n\n### January 27-28, 2026 FOMC Meeting\n\nAccessible Keys for Video\n\n[Space Bar] toggles play/pause;\n\n[Right/Left Arrows] seeks the video forwards and back (5 sec );\n\n[Up/Down Arrows] increase/decrease volume;\n\n[M] toggles mute on/off;\n\n[F] toggles fullscreen on/off (Except IE 11);\n\nThe [Tab] key may be used in combination with the [Enter/Return] key to navigate and activate control buttons, such as caption on/off.\n\n",
+                  "score": 0.914176
+                }
+              ],
+              "search_queries": [
+                "Federal Reserve FOMC meeting schedule 2026 site:federalreserve.gov",
+                "Federal Reserve March 2026 meeting dates press release site:federalreserve.gov"
+              ]
+            }
+          ],
+          "sentence_verdicts": {
+            "claude-opus-4-5-20251101": "not_supported",
+            "claude-sonnet-4-5-20250929": "not_supported",
+            "gemini-3-flash-preview": "error",
+            "gpt-5-chat-latest": "not_supported",
+            "grok-4-fast-non-reasoning": "not_supported"
+          }
+        },
+        {
+          "sentence_index": 24,
+          "sentence_text": "As of Friday, the national average gas price\na gallon over the last seven days, to roughly $3.31 a gallon \u2014 the highest since August of 2024, according to GasBuddy.",
+          "claims": [
+            {
+              "claim": "The national average gas price rose 20 cents a gallon over the last seven days to $3.31 a gallon",
+              "category": "statistical",
+              "assessments": [
+                {
+                  "model_id": 199,
+                  "model_name": "claude-opus-4-5-20251101",
+                  "provider": "Anthropic",
+                  "verdict": "not_supported",
+                  "reasoning": "The web search results do not contain any information about a 20-cent weekly increase in gas prices or a national average of $3.31 per gallon. The sources focus on GasBuddy's 2026 forecast projecting an annual average of $2.97 per gallon [Source 1, 2, 3], but none address the specific weekly price change or the $3.31 figure mentioned in the claim.",
+                  "sources": [
+                    "https://www.rigzone.com/news/gasbuddy_reveals_2026_usa_gasoline_price_forecast-14-jan-2026-182765-article/",
+                    "https://www.gasbuddy.com/go/2026-fuel-price-outlook",
+                    "https://www.aol.com/articles/why-gasbuddy-says-cheap-gas-193824223.html"
+                  ],
+                  "note": "The search results only contain annual forecasts and general price trends, not the specific weekly price data needed to verify this claim."
+                },
+                {
+                  "model_id": 168,
+                  "model_name": "claude-sonnet-4-5-20250929",
+                  "provider": "Anthropic",
+                  "verdict": "not_supported",
+                  "reasoning": "The provided web search results do not contain information about a 20-cent increase in gas prices over a seven-day period to $3.31 per gallon. The sources primarily discuss GasBuddy's 2026 forecast projecting an annual average of $2.97 per gallon and year-over-year trends [Sources 1, 2, 3, 5]. Source 4 mentions weekly price movements but does not provide the specific data needed to verify the claim about a 20-cent increase to $3.31.",
+                  "sources": [
+                    "https://www.rigzone.com/news/gasbuddy_reveals_2026_usa_gasoline_price_forecast-14-jan-2026-182765-article/",
+                    "https://www.gasbuddy.com/go/2026-fuel-price-outlook",
+                    "https://www.aol.com/articles/why-gasbuddy-says-cheap-gas-193824223.html",
+                    "https://www.gasbuddy.com/go/03-02-26-fuel-price-update"
+                  ]
+                },
+                {
+                  "model_id": 200,
+                  "model_name": "gemini-3-flash-preview",
+                  "provider": "Google",
+                  "verdict": "error",
+                  "reasoning": "Client error '429 Too Many Requests' for url 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=REDACTED'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+                  "sources": []
+                },
+                {
+                  "model_id": 172,
+                  "model_name": "gpt-5-chat-latest",
+                  "provider": "OpenAI",
+                  "verdict": "not_supported",
+                  "reasoning": "None of the provided sources mention a weekly change in gas prices or a national average of $3.31 per gallon. The sources instead discuss long-term forecasts for 2026, projecting average prices around $2.97 per gallon, which is unrelated to a short-term weekly increase of 20 cents. Therefore, the claim is not supported by the available evidence.",
+                  "sources": [
+                    "https://www.rigzone.com/news/gasbuddy_reveals_2026_usa_gasoline_price_forecast-14-jan-2026-182765-article/",
+                    "https://www.gasbuddy.com/go/2026-fuel-price-outlook",
+                    "https://www.aol.com/articles/why-gasbuddy-says-cheap-gas-193824223.html"
+                  ]
+                },
+                {
+                  "model_id": 173,
+                  "model_name": "grok-4-fast-non-reasoning",
+                  "provider": "xAI",
+                  "verdict": "not_supported",
+                  "reasoning": "The web search results focus exclusively on GasBuddy's forecasts for 2026 gasoline prices, projecting a national average of $2.97 per gallon for the year, with no mention of current or recent weekly price changes. Sources like [Source 1], [Source 2], and [Source 3] discuss future declines and historical context from 2020, but provide no data on a 20-cent rise to $3.31 over the last seven days. [Source 4] lists recent GasBuddy updates on gas prices inching up or edging higher, but the snippets do not confirm the specific claim's figures or timeframe, rendering the results irrelevant to verifying the recent weekly increase.",
+                  "sources": [
+                    "https://www.rigzone.com/news/gasbuddy_reveals_2026_usa_gasoline_price_forecast-14-jan-2026-182765-article/",
+                    "https://www.gasbuddy.com/go/2026-fuel-price-outlook",
+                    "https://www.aol.com/articles/why-gasbuddy-says-cheap-gas-193824223.html",
+                    "https://www.gasbuddy.com/go/03-02-26-fuel-price-update"
+                  ],
+                  "note": "The search results appear to be mismatched, as they discuss 2026 forecasts rather than current 2024 or 2025 price data; a more targeted search for recent national gas prices would be needed to verify the claim."
+                }
+              ],
+              "source_hint": "GasBuddy gas price data",
+              "web_sources": [
+                {
+                  "title": "GasBuddy Reveals 2026 USA Gasoline Price Forecast - Rigzone",
+                  "url": "https://www.rigzone.com/news/gasbuddy_reveals_2026_usa_gasoline_price_forecast-14-jan-2026-182765-article/",
+                  "content": "\u201cGasBuddy\u2019s forecast projects the national average price of gas to fall to $2.97 per gallon in 2026, marking the fourth consecutive annual decline and the lowest average since 2020,\u201d Patrick De Haan, Head of Petroleum Analysis at GasBuddy, said in the report.\n\n\u201cThis continued decrease reflects the unwinding of post-pandemic market distortions, expanding global refining capacity, and more stable supply chains,\u201d he added.\n\n\u201cWhile the drop from 2025 is modest compared to previous years, it underscores a meaningful shift toward greater overall market stability,\u201d he continued. [...] Advertisement -",
+                  "score": 0.94785136
+                },
+                {
+                  "title": "GasBuddy: Yearly Average Gas Prices to Fall Below $3 in 2026",
+                  "url": "https://www.gasbuddy.com/go/2026-fuel-price-outlook",
+                  "content": "GasBuddy\n\n# GasBuddy: Yearly Average Gas Prices to Fall Below $3 in 2026 \u2014 Lowest Since 2020\n\nOutlook forecasts $2.97 per gallon national average; $2,083 in household gasoline spend\n\nGasBuddy\u00ae, North America\u2019s trusted source for fuel savings for more than 25 years, today released its 2026 Fuel Price Outlook, forecasting the yearly national average price of gasoline to fall back below $3 per gallon for the first time since the COVID-19 pandemic. The yearly U.S. average is projected to be $2.97 per gallon, down 13 cents from 2025\u2019s average of $3.102 and marking the lowest yearly average since 20",
+                  "score": 0.9245858
+                },
+                {
+                  "title": "Why GasBuddy says cheap gas could stick around in 2026 - AOL.com",
+                  "url": "https://www.aol.com/articles/why-gasbuddy-says-cheap-gas-193824223.html",
+                  "content": "Advertisement\n\nFor premium support please call:\n\nFor premium support please call:\n\n# Why GasBuddy says cheap gas could stick around in 2026\n\nScripps News\n\nGasBuddy projects the 2026 U.S. average gas price will be $2.97 per gallon, the lowest since 2020 and 13 cents lower than last year.\n\nThe company also forecasts prices could drop to $2.86 per gallon by year\u2019s end. If trends continue, 2026 would mark the fourth consecutive year of price declines.\n\nPotential contributing factors include an economic slowdown, which could reduce demand, as well as changes in environmental regulations and trade p",
+                  "score": 0.9126935
+                },
+                {
+                  "title": "03.02.26 Fuel Price Update - GasBuddy",
+                  "url": "https://www.gasbuddy.com/go/03-02-26-fuel-price-update",
+                  "content": "By GasBuddy |\n\nGas Prices\n\n###### Gas Prices Inch Up for Third Straight Week on Continued Iran Tensions\n\nBy GasBuddy |\n\nGas Prices\n\n###### GasBuddy Reveals the Best Day of the Week to Buy Gas in 2026\n\nBy GasBuddy |\n\nGas Prices\n\n###### Gas Prices Edge Higher for Second Week as Seasonal Pressures Build\n\nBy GasBuddy |\n\nGas Prices\n\n###### National Average Inches Up as West Coast Prices Seasonally Swell\n\nBy GasBuddy |\n\nGas Prices\n\n###### Gas Prices Ease in Some States While Surging in Others as Oil Jumps\n\nBy GasBuddy |\n\nGas Prices\n\n###### Oil\u2019s Jump Past $60 Pushes National Average to Largest Weekl",
+                  "score": 0.9037116
+                },
+                {
+                  "title": "Average nationwide gas cost will dip below $3 per gallon this year ...",
+                  "url": "https://www.aol.com/articles/average-nationwide-gas-prices-dip-202814416.html",
+                  "content": "GasBuddy calculated the average by determining a monthly price range, averaging that and then taking the average of all 12 months. Full results were included in the group\u2019s 2026 fuel price outlook report.\n\nThe last year that average annual gas prices nationwide were as low as GasBuddy projects for this year was 2020, when the Covid pandemic kept millions of Americans working from home and schools largely virtual.\n\nThat year, the average price of unleaded gas nationwide was $2.17 per gallon, according to data from the U.S. Energy Information Administration.\n\nGasBuddy also projects that U.S. hou",
+                  "score": 0.8858788
+                }
+              ],
+              "search_queries": [
+                "GasBuddy national average gas price report March 2026",
+                "GasBuddy weekly fuel price data March 2026 site:gasbuddy.com"
+              ]
+            },
+            {
+              "claim": "$3.31 a gallon is the highest since August of 2024",
+              "category": "historical",
+              "assessments": [
+                {
+                  "model_id": 199,
+                  "model_name": "claude-opus-4-5-20251101",
+                  "provider": "Anthropic",
+                  "verdict": "not_supported",
+                  "reasoning": "The web search results do not contain specific information about a $3.31 per gallon price point or whether this represents the highest price since August 2024. Source 1 mentions gas prices were expected to fall to $3.27 per gallon on Labor Day 2024, but none of the sources provide data that would confirm or deny whether $3.31 is the highest since August 2024.",
+                  "sources": [
+                    "https://www.gasbuddy.com/newsroom/pressrelease/2024/08/27/gas-prices-cool-off-ahead-of-labor-day-could-fall-below-dollar3-this-fall-1149"
+                  ],
+                  "note": "Search results did not contain sufficient historical gas price data to verify this specific claim about $3.31 being the highest since August 2024."
+                },
+                {
+                  "model_id": 168,
+                  "model_name": "claude-sonnet-4-5-20250929",
+                  "provider": "Anthropic",
+                  "verdict": "not_supported",
+                  "reasoning": "The web search results do not contain information that would verify whether $3.31 per gallon is the highest gas price since August 2024. Source 1 mentions a Labor Day 2024 price forecast of $3.27 per gallon, but does not provide data about subsequent months or a $3.31 price point. The other sources contain headlines and navigation elements but lack the specific price data needed to verify this historical comparison claim.",
+                  "sources": [
+                    "https://www.gasbuddy.com/newsroom/pressrelease/2024/08/27/gas-prices-cool-off-ahead-of-labor-day-could-fall-below-dollar3-this-fall-1149"
+                  ],
+                  "note": "The search results provided do not contain relevant data to assess this claim. More specific sources about gas prices between August 2024 and the present would be needed."
+                },
+                {
+                  "model_id": 200,
+                  "model_name": "gemini-3-flash-preview",
+                  "provider": "Google",
+                  "verdict": "error",
+                  "reasoning": "Client error '429 Too Many Requests' for url 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=REDACTED'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+                  "sources": []
+                },
+                {
+                  "model_id": 172,
+                  "model_name": "gpt-5-chat-latest",
+                  "provider": "OpenAI",
+                  "verdict": "not_supported",
+                  "reasoning": "None of the provided sources mention a national average gas price of $3.31 per gallon or indicate that such a price was the highest since August 2024. Source [1] reports that the national average was $3.27 per gallon in late August 2024, which contradicts the claim that $3.31 was the highest since that month. The other sources do not provide relevant data on gas prices for that period.",
+                  "sources": [
+                    "https://www.gasbuddy.com/newsroom/pressrelease/2024/08/27/gas-prices-cool-off-ahead-of-labor-day-could-fall-below-dollar3-this-fall-1149"
+                  ]
+                },
+                {
+                  "model_id": 173,
+                  "model_name": "grok-4-fast-non-reasoning",
+                  "provider": "xAI",
+                  "verdict": "not_supported",
+                  "reasoning": "The provided web search results do not contain any information about gas prices reaching $3.31 per gallon or any specific prices since August 2024 that would confirm or contradict the claim. Source 1 mentions a predicted average of $3.27 per gallon on Labor Day 2024 (September 2, 2024), which is lower than $3.31 and predates August, but no sources discuss prices in or after August 2024. The other sources are either truncated or discuss unrelated future trends like 2025-2026, providing no relevant historical data for the claim.",
+                  "sources": [
+                    "https://www.gasbuddy.com/newsroom/pressrelease/2024/08/27/gas-prices-cool-off-ahead-of-labor-day-could-fall-below-dollar3-this-fall-1149"
+                  ],
+                  "note": "The search results appear to be from a future-dated or mismatched query, as they reference dates like 2025 and 2026, which do not align with verifying a 2024 historical claim."
+                }
+              ],
+              "source_hint": "GasBuddy gas price data",
+              "web_sources": [
+                {
+                  "title": "Gas Prices Cool Off Ahead of Labor Day, Could Fall Below $3 This Fall",
+                  "url": "https://www.gasbuddy.com/newsroom/pressrelease/2024/08/27/gas-prices-cool-off-ahead-of-labor-day-could-fall-below-dollar3-this-fall-1149",
+                  "content": "GasBuddy Logo\nGasBuddy Logo\nEnglish\n\n# Gas Prices Cool Off Ahead of Labor Day, Could Fall Below $3 This Fall\n\nDrivers can expect to pay less at the pump than Labor Day 2023; sub-$3 per gallon prices coming this fall\n\nDALLAS, TX (Aug. 27, 2024) \u2013 GasBuddy, the leading fuel savings platform providing North American drivers with the most ways to save money on gas, today released its annual Labor Day travel forecast, predicting the average price of gas will continue its recent downward trend, falling to $3.27 per gallon on Labor Day, the lowest Labor Day price since 2021. At $3.27 per gallon, this",
+                  "score": 0.88178825
+                },
+                {
+                  "title": "03.02.26 Fuel Price Update - GasBuddy",
+                  "url": "https://www.gasbuddy.com/go/03-02-26-fuel-price-update",
+                  "content": "By GasBuddy |\n\nGas Prices\n\n###### Average Gas Prices Fade for 7th Straight Week \u2013 But is the End in Sight?\n\nBy GasBuddy |\n\nGas Prices\n\n###### GasBuddy: Yearly Average Gas Prices to Fall Below $3 in 2026 \u2014 Lowest Since 2020\n\nBy GasBuddy |\n\n[ [...] By GasBuddy |\n\nGas Prices\n\n###### Gas Prices Inch Up for Third Straight Week on Continued Iran Tensions\n\nBy GasBuddy |\n\nGas Prices\n\n###### GasBuddy Reveals the Best Day of the Week to Buy Gas in 2026\n\nBy GasBuddy |\n\nGas Prices\n\n###### Gas Prices Edge Higher for Second Week as Seasonal Pressures Build\n\nBy GasBuddy |\n\nGas Prices\n\n###### National Average",
+                  "score": 0.86928266
+                },
+                {
+                  "title": "GasBuddy Sees Robust Summer Road Trip Season, Cheapest ...",
+                  "url": "https://www.gasbuddy.com/go/summer-travel-2025",
+                  "content": "By GasBuddy |\n\nGas Prices\n\n###### National Average Inches Up as West Coast Prices Seasonally Swell\n\nBy GasBuddy |\n\nGas Prices\n\n###### Gas Prices Ease in Some States While Surging in Others as Oil Jumps\n\nBy GasBuddy |\n\nGas Prices\n\n###### Oil\u2019s Jump Past $60 Pushes National Average to Largest Weekly Rise Since Summer\n\nBy GasBuddy |\n\nGas Prices\n\n###### Oil Prices, Geopolitics Push Gas Prices Higher After 7-Week Decline\n\nBy GasBuddy |\n\nGas Prices\n\n###### Average Gas Prices Fade for 7th Straight Week \u2013 But is the End in Sight?\n\nBy GasBuddy |\n\nGas Prices\n\n###### GasBuddy: Yearly Average Gas Prices t",
+                  "score": 0.7933146
+                },
+                {
+                  "title": "Labor Day National Average Gas Price To Be Lowest ... - GasBuddy",
+                  "url": "https://www.gasbuddy.com/go/gas-prices-labor-day-2025",
+                  "content": "By GasBuddy |\n\nGas Prices\n\n###### Average Gas Prices Fade for 7th Straight Week \u2013 But is the End in Sight?\n\nBy GasBuddy |\n\nGas Prices\n\n###### GasBuddy: Yearly Average Gas Prices to Fall Below $3 in 2026 \u2014 Lowest Since 2020\n\nBy GasBuddy |\n\n[ [...] By GasBuddy |\n\nGas Prices\n\n###### Gas Prices Inch Up for Third Straight Week on Continued Iran Tensions\n\nBy GasBuddy |\n\nGas Prices\n\n###### GasBuddy Reveals the Best Day of the Week to Buy Gas in 2026\n\nBy GasBuddy |\n\nGas Prices\n\n###### Gas Prices Edge Higher for Second Week as Seasonal Pressures Build\n\nBy GasBuddy |\n\nGas Prices\n\n###### National Average",
+                  "score": 0.77650476
+                },
+                {
+                  "title": "Get the Facts about Gas Prices - GasBuddy",
+                  "url": "https://www.gasbuddy.com/go/factors-affecting-gas-prices-2024",
+                  "content": "\u2014\n\n\\Update August 21, 2024\n\nThere\u2019s been a lot of action in the political sphere since our webinar in July, \u201cGet the Facts About Gas Prices.\u201d The webinar covered many complex factors that impact gas prices, regardless of what you may hear from your friends or read on social media. Although presidents don\u2019t control the actual price of gas, their policies and positions can definitely affect what happens at the pump.\n\nTo date, new Democratic party nominee Vice President Harris hasn\u2019t made any strong comments on gas prices. But with the Democratic National Convention already in progress and the fi",
+                  "score": 0.75355774
+                }
+              ],
+              "search_queries": [
+                "GasBuddy national average gas price February 2026 site:gasbuddy.com",
+                "GasBuddy historical gas price data August 2024 site:gasbuddy.com"
+              ]
+            }
+          ],
+          "sentence_verdicts": {
+            "claude-opus-4-5-20251101": "not_supported",
+            "claude-sonnet-4-5-20250929": "not_supported",
+            "gemini-3-flash-preview": "error",
+            "gpt-5-chat-latest": "not_supported",
+            "grok-4-fast-non-reasoning": "not_supported"
+          }
+        },
+        {
+          "sentence_index": 25,
+          "sentence_text": "Diesel has soared 51 cents in a week to $4.26 a gallon, the highest since November of 2023, the tracking service found.",
+          "claims": [
+            {
+              "claim": "Diesel rose 51 cents in a week to $4.26 a gallon",
+              "category": "statistical",
+              "assessments": [
+                {
+                  "model_id": 199,
+                  "model_name": "claude-opus-4-5-20251101",
+                  "provider": "Anthropic",
+                  "verdict": "not_supported",
+                  "reasoning": "The web search results do not contain any information about diesel rising 51 cents in a week to $4.26 a gallon. Source 1 mentions diesel prices around $3.39-$3.49 per gallon with only a 10-cent change, and Source 2 forecasts diesel averaging $3.55 per gallon in 2026. None of the sources reference the specific price point or weekly increase claimed.",
+                  "sources": [
+                    "https://www.gasbuddy.com/go/nationwide-gas-price-spike-continues-just-three-states-under-4?postCat=in-action&year=",
+                    "https://www.gasbuddy.com/go/2026-fuel-price-outlook"
+                  ],
+                  "note": "The search results appear to be from 2026 and show much lower diesel prices than the claim. The claim may be from a different time period (possibly 2022 during the energy crisis) that is not covered by these search results."
+                },
+                {
+                  "model_id": 168,
+                  "model_name": "claude-sonnet-4-5-20250929",
+                  "provider": "Anthropic",
+                  "verdict": "not_supported",
+                  "reasoning": "The claim states that diesel rose 51 cents in a week to $4.26 a gallon. However, Source 1 (dated 03.02.26) reports the national average diesel price at $3.62 per gallon (calculated from the median of $3.49 being 13 cents lower than the national average), with the median at $3.49 per gallon, up only 10 cents from the previous week. The claim's figures of a 51-cent increase and a $4.26 price point are not supported by any of the provided sources.",
+                  "sources": [
+                    "https://www.gasbuddy.com/go/nationwide-gas-price-spike-continues-just-three-states-under-4?postCat=in-action&year=",
+                    "https://www.gasbuddy.com/go/2026-fuel-price-outlook"
+                  ]
+                },
+                {
+                  "model_id": 200,
+                  "model_name": "gemini-3-flash-preview",
+                  "provider": "Google",
+                  "verdict": "error",
+                  "reasoning": "Client error '429 Too Many Requests' for url 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=REDACTED'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+                  "sources": []
+                },
+                {
+                  "model_id": 172,
+                  "model_name": "gpt-5-chat-latest",
+                  "provider": "OpenAI",
+                  "verdict": "not_supported",
+                  "reasoning": "None of the provided GasBuddy sources mention diesel rising 51 cents in a week to $4.26 per gallon. Source [1] reports a median U.S. diesel price of $3.49 per gallon, up only 10 cents from the previous week, which directly contradicts the claim of a 51-cent increase to $4.26. The other sources discuss general fuel price trends but do not provide weekly diesel price data.",
+                  "sources": [
+                    "https://www.gasbuddy.com/go/nationwide-gas-price-spike-continues-just-three-states-under-4?postCat=in-action&year="
+                  ]
+                },
+                {
+                  "model_id": 173,
+                  "model_name": "grok-4-fast-non-reasoning",
+                  "provider": "xAI",
+                  "verdict": "not_supported",
+                  "reasoning": "The web search results do not contain any information confirming a 51-cent weekly rise in diesel prices to $4.26 per gallon. [Source 1] reports the most common U.S. diesel price at $3.39 per gallon, down 10 cents from last week, and the median at $3.49, up 10 cents, which directly contradicts the claimed increase and price level. Other sources discuss gas prices, forecasts, or unrelated trends but provide no relevant data on diesel price changes matching the claim.",
+                  "sources": [
+                    "https://www.gasbuddy.com/go/nationwide-gas-price-spike-continues-just-three-states-under-4?postCat=in-action&year=",
+                    "https://www.gasbuddy.com/go/2026-fuel-price-outlook",
+                    "https://www.gasbuddy.com/go/03-02-26-fuel-price-update",
+                    "https://www.gasbuddy.com/go/average-us-gas-prices-fall-to-lowest-march-level-since-pandemic",
+                    "https://www.gasbuddy.com/go/gas-prices-see-fourth-straight-weekly-rise-prices-to-advance-on-iran-situation-this-week"
+                  ]
+                }
+              ],
+              "source_hint": "GasBuddy diesel price data",
+              "web_sources": [
+                {
+                  "title": "03.02.26 Fuel Price Update - GasBuddy",
+                  "url": "https://www.gasbuddy.com/go/nationwide-gas-price-spike-continues-just-three-states-under-4?postCat=in-action&year=",
+                  "content": "#### DIESEL PRICE TRENDS\n\nThe most common U.S. diesel price stood at $3.39 per gallon, down 10 cents from last week, followed by $3.49, $3.59, $3.29, and $3.69, rounding out the top five most common prices.\n\nThe median U.S. diesel price is $3.49 per gallon, up 10 cents from last week and about 13 cents lower than the national average.\n\nDiesel prices at the top 10% of stations in the country average $4.48 per gallon, while the bottom 10% average $3.01 per gallon.\n\nThe states with the lowest average diesel prices: Louisiana ($3.11), Oklahoma ($3.15), and Texas ($3.18).\n\nThe states with the highe",
+                  "score": 0.9396537
+                },
+                {
+                  "title": "GasBuddy: Yearly Average Gas Prices to Fall Below $3 in 2026",
+                  "url": "https://www.gasbuddy.com/go/2026-fuel-price-outlook",
+                  "content": "Despite the welcome relief from the highs seen earlier in the decade, GasBuddy expects 2026 to still bring familiar bouts of volatility tied to seasonal demand, refinery maintenance, hurricane season and ongoing geopolitical risks. Diesel prices are forecast to remain elevated relative to gasoline but continue easing from recent peaks, averaging $3.55 per gallon for the year.\n\nKey highlights from GasBuddy\u2019s 2026 Fuel Outlook: [...] Download the full 2026 Fuel Price Outlook here.\n\n    \n\nFor budget-minded drivers, GasBuddy is the travel and navigation app that is used by more North American driv",
+                  "score": 0.8443195
+                },
+                {
+                  "title": "03.02.26 Fuel Price Update - GasBuddy",
+                  "url": "https://www.gasbuddy.com/go/03-02-26-fuel-price-update",
+                  "content": "By GasBuddy |\n\nGas Prices\n\n###### Average Gas Prices Fade for 7th Straight Week \u2013 But is the End in Sight?\n\nBy GasBuddy |\n\nGas Prices\n\n###### GasBuddy: Yearly Average Gas Prices to Fall Below $3 in 2026 \u2014 Lowest Since 2020\n\nBy GasBuddy |\n\n[ [...] By GasBuddy |\n\nGas Prices\n\n###### Gas Prices Inch Up for Third Straight Week on Continued Iran Tensions\n\nBy GasBuddy |\n\nGas Prices\n\n###### GasBuddy Reveals the Best Day of the Week to Buy Gas in 2026\n\nBy GasBuddy |\n\nGas Prices\n\n###### Gas Prices Edge Higher for Second Week as Seasonal Pressures Build\n\nBy GasBuddy |\n\nGas Prices\n\n###### National Average",
+                  "score": 0.769098
+                },
+                {
+                  "title": "Average U.S. Gas Prices Fall to Lowest March Level ... - GasBuddy",
+                  "url": "https://www.gasbuddy.com/go/average-us-gas-prices-fall-to-lowest-march-level-since-pandemic",
+                  "content": "By GasBuddy |\n\nGas Prices\n\n###### Gas Prices Inch Up for Third Straight Week on Continued Iran Tensions\n\nBy GasBuddy |\n\nGas Prices\n\n###### GasBuddy Reveals the Best Day of the Week to Buy Gas in 2026\n\nBy GasBuddy |\n\nGas Prices\n\n###### Gas Prices Edge Higher for Second Week as Seasonal Pressures Build\n\nBy GasBuddy |\n\nGas Prices\n\n###### National Average Inches Up as West Coast Prices Seasonally Swell\n\nBy GasBuddy |\n\nGas Prices\n\n###### Gas Prices Ease in Some States While Surging in Others as Oil Jumps\n\nBy GasBuddy |\n\nGas Prices\n\n###### Oil\u2019s Jump Past $60 Pushes National Average to Largest Weekl",
+                  "score": 0.64182705
+                },
+                {
+                  "title": "Gas Prices See Fourth Straight Weekly Rise, Prices to Advance on ...",
+                  "url": "https://www.gasbuddy.com/go/gas-prices-see-fourth-straight-weekly-rise-prices-to-advance-on-iran-situation-this-week",
+                  "content": "[](\n\nGasBuddy\n\nFor budget-minded drivers, GasBuddy is the travel and navigation app that is used by more North American drivers to save money on gas than any other. Unlike fuel retailer apps, as well as newer apps focused on fuel savings, GasBuddy covers 150,000+ gas stations in North America, giving drivers 27 ways to save on fuel. That\u2019s why GasBuddy has been downloaded nearly 90 million times \u2013 more than any other travel and navigation app focused on gas savings.\n\nView Blog Posts\n\nGas Prices\n\n###### 03.02.26 Fuel Price Update\n\nBy GasBuddy |\n\nGas Prices\n\n###### Gas Prices See Fourth Straight",
+                  "score": 0.6410185
+                }
+              ],
+              "search_queries": [
+                "GasBuddy weekly diesel price report March 2026 site:gasbuddy.com",
+                "GasBuddy average U.S. diesel price February 2026 site:gasbuddy.com"
+              ]
+            },
+            {
+              "claim": "$4.26 a gallon for diesel is the highest since November of 2023",
+              "category": "historical",
+              "assessments": [
+                {
+                  "model_id": 199,
+                  "model_name": "claude-opus-4-5-20251101",
+                  "provider": "Anthropic",
+                  "verdict": "not_supported",
+                  "reasoning": "The web search results do not contain any information about diesel prices reaching $4.26 per gallon or any data from November 2023 to verify the historical comparison. The sources show diesel prices in 2025-2026 ranging from approximately $3.46 to $3.90 per gallon [Source 4], with the highest prices at the top 10% of stations averaging $4.33 [Source 1], but none confirm the specific $4.26 figure or the November 2023 benchmark mentioned in the claim.",
+                  "sources": [
+                    "https://www.gasbuddy.com/go/nationwide-gas-price-spike-continues-just-three-states-under-4?postCat=in-action&year=",
+                    "https://ycharts.com/indicators/us_retail_diesel_price"
+                  ],
+                  "note": "The search results do not contain historical diesel price data from November 2023, making it impossible to verify the claim's historical comparison."
+                },
+                {
+                  "model_id": 168,
+                  "model_name": "claude-sonnet-4-5-20250929",
+                  "provider": "Anthropic",
+                  "verdict": "not_supported",
+                  "reasoning": "The claim states that $4.26 per gallon for diesel is the highest since November 2023. However, [Source 4] provides historical diesel price data showing that as of March 2, 2026, the US retail diesel price was $3.897 per gallon, not $4.26. The historical data in [Source 4] shows diesel prices throughout late 2025 and early 2026 ranging from approximately $3.45 to $3.90 per gallon, with no indication of prices reaching $4.26. The sources do not support the specific price point of $4.26 per gallon claimed.",
+                  "sources": [
+                    "https://ycharts.com/indicators/us_retail_diesel_price",
+                    "https://gaspriceguy.substack.com/p/gas-prices-ease-in-some-states-while",
+                    "https://www.gasbuddy.com/go/nationwide-gas-price-spike-continues-just-three-states-under-4?postCat=in-action&year="
+                  ]
+                },
+                {
+                  "model_id": 200,
+                  "model_name": "gemini-3-flash-preview",
+                  "provider": "Google",
+                  "verdict": "error",
+                  "reasoning": "Client error '429 Too Many Requests' for url 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=REDACTED'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+                  "sources": []
+                },
+                {
+                  "model_id": 172,
+                  "model_name": "gpt-5-chat-latest",
+                  "provider": "OpenAI",
+                  "verdict": "not_supported",
+                  "reasoning": "None of the provided sources mention a national diesel price of $4.26 per gallon or indicate that such a level was the highest since November 2023. The most recent data from YCharts shows U.S. retail diesel prices around $3.90 per gallon in early March 2026 [Source 4], and GasBuddy reports similar figures around $3.58\u2013$3.69 per gallon [Sources 1, 3]. There is no evidence in these sources that diesel reached $4.26 or that this was the highest since November 2023.",
+                  "sources": [
+                    "https://ycharts.com/indicators/us_retail_diesel_price",
+                    "https://gaspriceguy.substack.com/p/gas-prices-ease-in-some-states-while",
+                    "https://www.gasbuddy.com/go/nationwide-gas-price-spike-continues-just-three-states-under-4?postCat=in-action&year="
+                  ]
+                },
+                {
+                  "model_id": 173,
+                  "model_name": "grok-4-fast-non-reasoning",
+                  "provider": "xAI",
+                  "verdict": "not_supported",
+                  "reasoning": "The claim states that $4.26 per gallon for diesel is the highest since November 2023, but the provided sources show national average diesel prices in late 2025 and early 2026 ranging from about $3.46 to $3.90, with no mention of $4.26 or any prices that high in that period. Source 4 provides historical weekly data up to March 2, 2026, confirming the highest recent average was $3.897, which is well below $4.26 and does not support the claim of it being a high point since November 2023. Other sources like [Source 1] and [Source 3] report similar low averages around $3.69 and $3.585, with no evidence of the claimed price level.",
+                  "sources": [
+                    "https://ycharts.com/indicators/us_retail_diesel_price",
+                    "https://www.gasbuddy.com/go/nationwide-gas-price-spike-continues-just-three-states-under-4?postCat=in-action&year=",
+                    "https://gaspriceguy.substack.com/p/gas-prices-ease-in-some-states-while"
+                  ]
+                }
+              ],
+              "source_hint": "GasBuddy diesel price data",
+              "web_sources": [
+                {
+                  "title": "03.02.26 Fuel Price Update - GasBuddy",
+                  "url": "https://www.gasbuddy.com/go/nationwide-gas-price-spike-continues-just-three-states-under-4?postCat=in-action&year=",
+                  "content": "#### DIESEL PRICE TRENDS\n\nThe most common U.S. diesel price stood at $3.69 per gallon, up 30 cents from last week, followed by $3.49, $3.39, $3.29, and $3.19, rounding out the top five most common prices.\n\nThe median U.S. diesel price is $3.49 per gallon, up 10 cents from last week and about 5 cents lower than the national average.\n\nDiesel prices at the top 10% of stations in the country average $4.33 per gallon, while the bottom 10% average $2.88 per gallon.\n\nThe states with the lowest average diesel prices: Oklahoma ($3.00), Texas ($3.07), and Colorado ($3.08).\n\nThe states with the highest a",
+                  "score": 0.9457263
+                },
+                {
+                  "title": "GasBuddy: Yearly Average Gas Prices to Fall Below $3 in 2026",
+                  "url": "https://www.gasbuddy.com/go/2026-fuel-price-outlook",
+                  "content": "Despite the welcome relief from the highs seen earlier in the decade, GasBuddy expects 2026 to still bring familiar bouts of volatility tied to seasonal demand, refinery maintenance, hurricane season and ongoing geopolitical risks. Diesel prices are forecast to remain elevated relative to gasoline but continue easing from recent peaks, averaging $3.55 per gallon for the year.\n\nKey highlights from GasBuddy\u2019s 2026 Fuel Outlook: [...] GasBuddy\n\n# GasBuddy: Yearly Average Gas Prices to Fall Below $3 in 2026 \u2014 Lowest Since 2020\n\nOutlook forecasts $2.97 per gallon national average; $2,083 in househo",
+                  "score": 0.902481
+                },
+                {
+                  "title": "Gas Prices Ease in Some States While Surging in Others as Oil Jumps",
+                  "url": "https://gaspriceguy.substack.com/p/gas-prices-ease-in-some-states-while",
+                  "content": "# Fuel Insights\n\n# Gas Prices Ease in Some States While Surging in Others as Oil Jumps\n\nPatrick De Haan\n\nFeb 02, 2026\n\nThe nation\u2019s average price of gasoline has fallen 0.9 cents over the last week and stands at $2.83 per gallon, according to GasBuddy\u00ae data compiled from more than 12 million individual price reports covering over 150,000 gas stations across the country. The national average is up 3.9 cents from a month ago and is 21.3 cents per gallon lower than a year ago. The national average price of diesel rose 4.2 cents in the last week and stands at $3.585 per gallon. [...] #### DIESEL P",
+                  "score": 0.8660535
+                },
+                {
+                  "title": "US Retail Diesel Price (Weekly) - United States - Historica\u2026 - YCharts",
+                  "url": "https://ycharts.com/indicators/us_retail_diesel_price",
+                  "content": "### Historical Data\n\n| Date | Value |\n --- |\n| March 02, 2026 | 3.897 |\n| February 23, 2026 | 3.809 |\n| February 16, 2026 | 3.711 |\n| February 09, 2026 | 3.688 |\n| February 02, 2026 | 3.681 |\n| January 26, 2026 | 3.624 |\n| January 19, 2026 | 3.53 |\n| January 12, 2026 | 3.459 |\n| January 05, 2026 | 3.477 |\n| December 29, 2025 | 3.50 |\n| December 22, 2025 | 3.544 |\n| December 15, 2025 | 3.607 |\n| December 08, 2025 | 3.665 |\n| December 01, 2025 | 3.758 |\n| November 24, 2025 | 3.831 |\n| November 17, 2025 | 3.868 |\n| November 10, 2025 | 3.837 |\n| November 03, 2025 | 3.753 |\n| October 27, 2025 | 3.7",
+                  "score": 0.8624794
+                },
+                {
+                  "title": "US Gas Prices: See Where Your State Stacks Up | LendingTree",
+                  "url": "https://www.lendingtree.com/credit-cards/study/us-gas-prices/",
+                  "content": "| Rank | State | Avg. gas price, Feb. 10, 2026 | Avg. gas price, Feb. 10, 2025 | YoY % change | YoY $ change |\n ---  ---  --- |\n| 1 | Alaska | $3.45 | $3.34 | 3.2% | $0.11 |\n| 2 | Washington | $4.06 | $4.04 | 0.3% | $0.01 |\n| 3 | Oregon | $3.58 | $3.67 | -2.3% | -$0.08 |\n| 4 | California | $4.50 | $4.63 | -2.8% | -$0.13 |\n| 5 | Hawaii | $4.40 | $4.55 | -3.2% | -$0.15 |\n| 6 | Massachusetts | $2.91 | $3.03 | -4.2% | -$0.13 |\n| 7 | Rhode Island | $2.87 | $3.00 | -4.5% | -$0.14 |\n| 8 | New Hampshire | $2.83 | $2.97 | -4.7% | -$0.14 |\n| 9 | District of Columbia | $3.10 | $3.26 | -4.8% | -$0.16 |\n| ",
+                  "score": 0.6219319
+                }
+              ],
+              "search_queries": [
+                "GasBuddy diesel price data February 2026 site:gasbuddy.com",
+                "GasBuddy historical diesel prices chart November 2023 to February 2026"
+              ]
+            }
+          ],
+          "sentence_verdicts": {
+            "claude-opus-4-5-20251101": "not_supported",
+            "claude-sonnet-4-5-20250929": "not_supported",
+            "gemini-3-flash-preview": "error",
+            "gpt-5-chat-latest": "not_supported",
+            "grok-4-fast-non-reasoning": "not_supported"
+          }
+        }
+      ]
+    }
+  ]
+}

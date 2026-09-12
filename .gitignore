@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.env
+.DS_Store
+
+# research output: keep the 7 reports and the one batch file behind each; skip the 74 per-article intermediates
+output/*.json
+!output/compare_v2_batch_20260308_155457.json
+!output/compare_v2_batch_20260308_185307.json
+!output/compare_v2_batch_20260308_221121.json
+!output/compare_v2_batch_20260308_221159.json
+!output/compare_v2_batch_20260309_120753.json
+!output/compare_v2_batch_20260309_125136.json
+!output/compare_v2_opinion_batch_20260309_125924.json

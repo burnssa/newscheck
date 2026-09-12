@@ -1,0 +1,17 @@
+# Newscheck small batch - source_hint test
+# CBS (ADP turnover claim) + 4 most divergent articles from v2 batch
+
+# CBS News - February 2026 jobs (ADP turnover test case)
+https://www.cbsnews.com/news/jobs-report-today-february-2026-economy-layoffs-bls/
+
+# Fox Business - February 2026 jobs (73.1% agreement, 7 disagreements)
+https://www.foxbusiness.com/economy/us-jobs-report-february-2026
+
+# Pew Research - Trump confidence poll (75.0% agreement, 7 disagreements)
+https://www.pewresearch.org/politics/2026/01/29/confidence-in-trump-dips-and-fewer-now-say-they-support-his-policies-and-plans/
+
+# NPR - State of the Union fact check (75.6% agreement, 11 disagreements)
+https://www.npr.org/2026/02/24/nx-s1-5716277/trump-state-union-fact-check
+
+# CNN - February 2026 jobs report (76.9% agreement, 3 disagreements)
+https://www.cnn.com/2026/03/06/economy/us-jobs-report-february

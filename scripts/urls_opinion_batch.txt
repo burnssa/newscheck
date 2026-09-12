@@ -1,0 +1,26 @@
+# Newscheck opinion batch - 8 articles across political spectrum
+# All classified as opinion (high confidence) by the article type classifier
+
+# Fox News - immigration (right)
+https://www.foxnews.com/opinion/not-coming-america-60-year-immigration-bubble-finally-bursts
+
+# Washington Examiner - drug policy (right)
+https://www.washingtonexaminer.com/opinion/4480367/when-7oh-fears-drive-policy-by-anecdote-kratom/
+
+# The Hill - immigration enforcement data (center)
+https://thehill.com/opinion/lindseys-lens/5732057-trump-immigration-crackdown-data/
+
+# The Hill - trade policy (center)
+https://thehill.com/opinion/finance/5768708-trump-trade-policy-agenda-2026/
+
+# The Hill - healthcare costs (center)
+https://thehill.com/opinion/healthcare/5669986-america-sick-health-care/
+
+# The Hill - college education decline (center)
+https://thehill.com/opinion/education/5659983-college-decline-public-confidence/
+
+# Al Jazeera - Russia economic war myths (left/international)
+https://www.aljazeera.com/opinions/2026/2/24/three-myths-about-the-russia-economic-war
+
+# Al Jazeera - Iran strikes political impact (left/international)
+https://www.aljazeera.com/opinions/2026/3/4/the-iran-strikes-could-become-a-midterm-reckoning-for-trump-and-israel

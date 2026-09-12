@@ -11,6 +11,9 @@ class Article(BaseModel):
     sentence_count: int
     word_count: int
     truncated: bool = False
+    article_type: str = "unknown"  # opinion, news, analysis, fact-check, research, unknown
+    type_confidence: str = "none"  # high, medium, low, none
+    type_source: Optional[str] = None  # which tier classified it: url, html_metadata, llm
 
 
 class ExtractedClaim(BaseModel):
