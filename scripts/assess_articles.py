@@ -15,6 +15,7 @@ API keys and DATABASE_URL loaded from superjective/.env
 
 import json
 import os
+import re
 import sys
 import time
 from datetime import datetime
@@ -101,6 +102,18 @@ Return ONLY valid JSON with these fields:
 
 
 # ---------- Web search via Tavily ----------
+
+_CREDENTIAL_PARAM = re.compile(r'([?&](?:key|api_key|apikey|token|access_token)=)[^&\s\'"]+', re.IGNORECASE)
+
+
+def _redact_error(err) -> str:
+    """Error text that is safe to store or print.
+
+    Some providers echo the full request URL in error messages, and Google's API
+    carries the key as a query parameter, so raw exception text can leak credentials.
+    """
+    return _CREDENTIAL_PARAM.sub(r'\1REDACTED', str(err))
+
 
 def search_claim(claim_text: str, max_results: int = 5) -> list[dict] | None:
     """Search the web for evidence about a claim using Tavily API.
@@ -371,13 +384,13 @@ def assess_article(url: str, models: list) -> dict | None:
                 print(f"    {model['name']}: {assessment['verdict']} ({elapsed:.1f}s)")
                 assessments.append(assessment)
             except Exception as e:
-                print(f"    {model['name']}: ERROR — {e}")
+                print(f"    {model['name']}: ERROR — {_redact_error(e)}")
                 assessments.append({
                     "model_id": model["id"],
                     "model_name": model["name"],
                     "provider": model["provider"],
                     "verdict": "error",
-                    "reasoning": str(e),
+                    "reasoning": _redact_error(e),
                     "sources": [],
                 })
 

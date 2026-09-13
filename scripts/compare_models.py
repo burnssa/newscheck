@@ -301,6 +301,18 @@ def _parse_claims_json(raw):
     return []
 
 
+_CREDENTIAL_PARAM = re.compile(r'([?&](?:key|api_key|apikey|token|access_token)=)[^&\s\'"]+', re.IGNORECASE)
+
+
+def _redact_error(err) -> str:
+    """Error text that is safe to store or print.
+
+    Some providers echo the full request URL in error messages, and Google's API
+    carries the key as a query parameter, so raw exception text can leak credentials.
+    """
+    return _CREDENTIAL_PARAM.sub(r'\1REDACTED', str(err))
+
+
 def _parse_assessment(raw, model):
     try:
         parsed = json.loads(raw)
@@ -503,10 +515,10 @@ def process_article(url, models, query_model):
                     print(f"      {_short_name(model['name']):<8} {assessment['verdict']:<22} ({elapsed:.1f}s)")
                     assessments.append(assessment)
                 except Exception as e:
-                    print(f"      {model['name']}: ERROR — {e}")
+                    print(f"      {model['name']}: ERROR — {_redact_error(e)}")
                     assessments.append({"model_id": model["id"], "model_name": model["name"],
                                         "provider": model["provider"], "verdict": "error",
-                                        "reasoning": str(e), "sources": []})
+                                        "reasoning": _redact_error(e), "sources": []})
 
             claim_entry = {"claim": claim_text, "category": category, "assessments": assessments}
             if source_hint:

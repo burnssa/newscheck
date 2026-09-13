@@ -221,6 +221,18 @@ def _call_model(model, prompt):
     return caller(model, prompt)
 
 
+_CREDENTIAL_PARAM = re.compile(r'([?&](?:key|api_key|apikey|token|access_token)=)[^&\s\'"]+', re.IGNORECASE)
+
+
+def _redact_error(err) -> str:
+    """Error text that is safe to store or print.
+
+    Some providers echo the full request URL in error messages, and Google's API
+    carries the key as a query parameter, so raw exception text can leak credentials.
+    """
+    return _CREDENTIAL_PARAM.sub(r'\1REDACTED', str(err))
+
+
 # ---------- Helpers ----------
 
 def _split_sentences(text):
@@ -562,7 +574,7 @@ def _check_stream(url: str):
                     assessments.append({
                         "model": model["name"],
                         "verdict": "error",
-                        "reasoning": str(e),
+                        "reasoning": _redact_error(e),
                         "sources": [],
                     })
 
